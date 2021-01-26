@@ -38,7 +38,7 @@ make your code easier to read.
    3. Commit with a meaningful message using `git commit -m 'meaningful message'`
 
 5. When you're done working on any particular machine (or every now and again)
-   use `git push` to send your changes to the git repoistory on your hosting
+   use `git push` to send your changes to the git repository on your hosting
    service (e.g. bitbucket).
 
 6. As you're going along write a report including your findings (and figures).
