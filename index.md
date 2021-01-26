@@ -80,7 +80,7 @@ Friday morning of the week before.
 
 * Introduction to Python
 * Version control with Git
-* Matplotlib and numpy Python packages
+* Matplotlib and NumPy Python packages
 * Implementing Euler's method and Runge-Kutta
 
 ### Weeks 16&ndash;20: David Barton
