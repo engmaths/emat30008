@@ -26,6 +26,18 @@
     <priority>0.5</priority>
 </url>
 <url>
+    <loc>https://engmaths.github.io/emat30008/odes/numericalshooting/index.html</loc>
+    <lastmod>2021-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://engmaths.github.io/emat30008/odes/codetesting/index.html</loc>
+    <lastmod>2021-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>https://engmaths.github.io/emat30008/basics/structures/index.html</loc>
     <lastmod>2021-01-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -81,12 +93,6 @@
 </url>
 <url>
     <loc>https://engmaths.github.io/emat30008/basics/numpy/index.html</loc>
-    <lastmod>2021-01-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://engmaths.github.io/emat30008/odes/shooting-introduction/index.html</loc>
     <lastmod>2021-01-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
