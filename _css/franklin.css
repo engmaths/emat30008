@@ -328,3 +328,50 @@ code {
   border-radius: 0 10px 10px 0;
   border-left: 5px solid #4c9cf1;
 }
+
+/* ==================================================================
+    DAWB: ADMONITIONS
+================================================================== */
+
+.admonition {
+  margin-top: 1.5em;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
+
+.admonition-title {
+  font-size: 105%;
+  padding-left: 7px;
+  padding-top: 2px;
+  margin: 0px;
+}
+
+.admonition-title::before {
+  content: "⚠ ";
+}
+
+.admonition p {
+  padding-left: 7px;
+}
+
+.note {
+  background-color: aliceblue;
+  border: 1px solid cornflowerblue;
+}
+
+.note .admonition-title {
+  color: white;
+  background-color: cornflowerblue;
+}
+
+.warning {
+  background-color: #f1b3b1;
+  border: 1px solid crimson;
+}
+
+.warning .admonition-title {
+  color: white;
+  background-color: crimson;
+}

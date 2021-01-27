@@ -36,6 +36,11 @@ repository[^2].
 [^1]: Concise is good; 8&ndash;10 pages of good content is far better than 15 pages of waffle.
 [^2]: David Barton (`@dawbarton` on GitHub, GitLab, and BitBucket); Oscar Benjamin (`@oscarbenjamin` on GitHub); and Martin Homer (???)
 
+## Detailed description
+
+!!! warning
+    This description is not complete!
+
 ## Git repository &mdash; version control
 
 Everyone should create a new Git repository for this unit. We
