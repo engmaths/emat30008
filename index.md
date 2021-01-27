@@ -61,7 +61,7 @@ simultaneously achieving the software aims.
       [Agile](https://en.wikipedia.org/wiki/Agile_software_development)[^3].
 
 [^2]: There are many abstraction techniques in software engineering; see this [Wikipedia page](https://en.wikipedia.org/wiki/Abstraction_(computer_science)).
-[^3]: It isn't really possible to use Agile or similar techniques within this course because of the relative simplicity of the tasks. Also note this [commentary](https://zwischenzugs.wordpress.com/2017/10/15/my-20-year-experience-of-software-development-methodologies/) on different management techniques &mdash; I suspect it's quite accurate!
+[^3]: It isn't really possible to use Agile or similar techniques within this course because of the relative simplicity of the tasks. Also note this [commentary](https://zwischenzugs.com/2017/10/15/my-20-year-experience-of-software-development-methodologies/) on different management techniques &mdash; I suspect it's quite accurate!
 
 ## Format of the course
 
