@@ -7,7 +7,7 @@ website here](https://matplotlib.org/). The code for matplotlib is on
 [github](https://github.com/matplotlib/matplotlib).
 
 First take a quick look at [this
-tutorial](http://www.labri.fr/perso/nrougier/teaching/matplotlib/). As in
+tutorial](https://www.labri.fr/perso/nrougier/teaching/matplotlib/). As in
 other cases this tutorial has more than we need so don't feel that you should
 work through the whole thing (although don't let me stop you if you want to!).
 

@@ -347,4 +347,4 @@ True
 ## Finished?
 
 If you're happy with these you can move on to [loops, conditionals and
-functions](../basics2).
+functions](../basics2/).

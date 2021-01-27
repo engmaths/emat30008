@@ -30,8 +30,8 @@ programming.
 In fact there are a number of different interpreters that you can install and
 use for running your Python code or that you can use in different
 environments. Leaving aside the standard interpreter there are other
-interpreters, notably [PyPy](https://pypy.org) (which is itself written in a
-Python-like language) and [Jython](http://www.jython.org) (written in Java),
+interpreters, notably [PyPy](https://www.pypy.org) (which is itself written in a
+Python-like language) and [Jython](https://www.jython.org) (written in Java),
 [MicroPython](https://micropython.org) for embedded systems and
 [Brython](https://www.brython.info) (for running in browsers).
 
@@ -64,7 +64,7 @@ Installing Python and then separately installing each of the different
 libraries we want can be a pain for beginners to setup which is why installers
 are provided that can bundle Python with other commonly used libraries. For
 this reason I recommend to install the [Anaconda Python distribution from
-continuum](https://www.continuum.io/downloads). In addition to the interpreter
+continuum](https://www.anaconda.com/products/individual). In addition to the interpreter
 and the stdlib this will install a large number of commonly used scientific
 libraries such as `numpy` for Matlab-style arrays and `matplotlib` for
 plotting that we are going to need to use in this unit.
@@ -180,9 +180,9 @@ a graphical IDE (integrated development environment) having both an editor and
 an interactive terminal. Typically when Python is installed IDLE will also be
 installed along with some kind of shortcut that you can use to run IDLE. There
 are also other IDEs used by Python programmers e.g.
-[spyder](https://pythonhosted.org/spyder/) is popular with scientific
+[VS Code](https://code.visualstudio.com/) and [Spyder](https://spyder-ide.org/) are popular with scientific
 programmers. Many people also like to write scientific code in the form of
-[Jupyter notebooks](http://jupyter.org/). We will look at these things later.
+[Jupyter notebooks](https://jupyter.org/). We will look at these things later.
 
 ### Interactive mode
 
@@ -346,4 +346,4 @@ By now I am assuming that
   and know how to switch between them.
 * You understand the notation used in showing the terminal sessions above.
 
-If so then we're ready to move into the [basics of Python the language...](../basics)
+If so then we're ready to move into the [basics of Python the language...](../basics/)

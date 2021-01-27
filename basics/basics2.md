@@ -455,4 +455,4 @@ zero_students2.py  zero_students3.py  zero_students.py
 
 ## Finished?
 
-If you're happy with these you can move on to [data structures](../structures).
+If you're happy with these you can move on to [data structures](../structures/).

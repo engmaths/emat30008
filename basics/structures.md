@@ -77,4 +77,4 @@ description of the performance characteristics
 
 ## Finished?
 
-If you're happy with these you can move on to [input/output](../fileio).
+If you're happy with these you can move on to [input/output](../fileio/).

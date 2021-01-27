@@ -55,19 +55,18 @@ For our purposes numpy and scipy are basically the same thing but arbitrarily
 divided into two different packages.
 
 You can find a quick tutorial on [numpy
-here](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html). There is
+here](https://numpy.org/doc/stable/user/quickstart.html). There is
 also [this
-page](https://docs.scipy.org/doc/numpy-dev/user/numpy-for-matlab-users.html)
+page](https://numpy.org/doc/stable/user/numpy-for-matlab-users.html)
 which notes the important differences between Matlab and numpy. You can also
 find the code for both [numpy](https://github.com/numpy/numpy) and
 [scipy](https://github.com/scipy/scipy) on GitHub.
-
 
 ## Matrices or arrays?
 
 Numpy has a function `matrix` which creates a "matrix" instead of a 2D array.
 Do *not* use this function. Never use it. More information can be found
-[here](https://docs.scipy.org/doc/numpy-dev/user/numpy-for-matlab-users.html).
+[here](https://numpy.org/doc/stable/user/numpy-for-matlab-users.html).
 When I say "matrix" below I mean that you should create a 2D array using the
 `array` function.
 
