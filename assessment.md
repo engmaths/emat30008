@@ -38,7 +38,7 @@ repository[^2].
 
 ## Git repository &mdash; version control
 
-Everyone should create a new Git repository for this part of the unit. We
+Everyone should create a new Git repository for this unit. We
 expect you to commit *all your code* to this repository on a regular basis.
 As a general rule, if you've been working on your uncommitted code for an hour
 (or more) then you should make another commit.
