@@ -4,10 +4,10 @@
 
 ## Overview
 
-This part of the unit will be assessed by a single piece of coursework worth
-50% of the overall unit mark. Rather than being a discrete piece of work, the
-coursework will be the *cumulation of material covered each week of the
-course*. Each week will build on the previous and form part of the assessment.
+This unit will be assessed by a single piece of coursework. Rather than being a
+discrete piece of work, the coursework will be the *cumulation of material
+covered each week of the course*. Each week will build on the previous and form
+part of the assessment.
 
 The University's [generic marking
 criteria](http://www.bristol.ac.uk/academic-quality/assessment/regulations-and-code-of-practice-for-taught-programmes/marking-criteria/)
