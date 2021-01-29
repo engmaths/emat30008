@@ -37,7 +37,7 @@ your report via Blackboard and ensure that we have read access to your Git
 repository[^2].
 
 [^1]: Concise is good; 8&ndash;10 pages of good content is far better than 15 pages of waffle.
-[^2]: David Barton (`@dawbarton` on GitHub, GitLab, and BitBucket); Oscar Benjamin (`@oscarbenjamin` on GitHub); and Martin Homer (???)
+[^2]: David Barton (`@dawbarton` on GitHub, GitLab, and BitBucket); Oscar Benjamin (`@oscarbenjamin` on GitHub); and Martin Homer (`@martinhomer` on GitHub)
 
 ## Software
 
@@ -49,7 +49,7 @@ repository[^2].
 The aim of the coursework is to integrate the work you do from each week into a single piece of software. The software should be a general numerical continuation code that can track, under variations of a parameter in the system,  
 
 * limit cycle oscillations of arbitrary ordinary differential equations (of any number of dimensions), and
-* steady-states of second-order diffusive PDEs with arbitrary source/sink terms.
+* steady-states of second-order diffusive PDEs.
 
 You should take care to define appropriate interfaces between each of the components so that the resulting code is modular and follows the DRY (Don't Repeat Yourself) principle.
 
