@@ -95,8 +95,6 @@ Note that week 17 is a consolidation week (i.e., no timetabled teaching).
 
 ### Weeks 21&ndash;24: Martin Homer
 
-* Finite differences for diffusive PDEs
-* Different boundary conditions for PDEs
-* Sources and sinks
-* Nonlinear diffusion
-* Other classes of PDEs
+* Finite difference method: introduction and basics
+* Problem extensions: changing the boundary conditions, sources/sinks, spatial inhomogeneity
+* Going beyond the heat equation in one space dimension
