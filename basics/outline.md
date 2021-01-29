@@ -25,6 +25,6 @@ This part of the unit will cover
 1. [Numpy](numpy.html)
 1. [Matplotlib](matplotlib.html)
 
-# Bouncing balls...
+# Initial value problems and the Euler and RK4 methods
 
-1. [Bouncing ball problem](bouncing.html)
+1. [Assignment](assignment.html)

@@ -21,6 +21,6 @@ This part of the unit will cover
 1. [Numpy](numpy/)
 1. [Matplotlib](matplotlib/)
 
-## Bouncing balls
+## Initial value problems
 
-1. [Bouncing ball problem](bouncing/)
+1. [Assignment](ivps/)

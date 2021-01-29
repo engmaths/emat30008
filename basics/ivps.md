@@ -1,15 +1,10 @@
 # Bouncing balls
 
-Download [this script](/assets/basics/bouncing.py) which animates a bouncing ball.
-Take a look through the code and run it to see what it does. Notice that the
-ball keeps bouncing higher and higher - this is due to the instability of
-using the Euler method in this simulation.
-
 ## Assignment outline
 
 You will provide a code repository demonstrating your solutions to the
-problems below. You should also make a short report (in LaTeX) including each
-of your figures. The report should explain the mathematical principles behind
+problems below. You should also make a very short report including each of
+your figures. The report should explain the mathematical principles behind
 your analysis and interpret the numerical results. Take the time to format
 your figures nicely.
 
@@ -46,14 +41,14 @@ make your code easier to read.
 7. Submit a zip of your repository (the folder called "bouncing") including
    all files and the .git folder along with a PDF of your report.
 
-## Problems
+## Assignment problems
 
 1. Use the Euler method to solve the ODE $\dot{x} = x$ with initial
    condition $x(0) = 1$. You should use this to estimate $x(1)$ using
    different timesteps. Produce a (nicely formatted) plot with double
    logarithmic scale showing how the error depends on the size of the timestep
    $\Delta t$.
-   
+
    1. Ensure that you have a function called `euler_step` that does a single Euler step.
    1. Also make a function called `solve_to` which solves from $x_1,t_1$ to $x_2,t_2$
       in steps no bigger than `deltat_max`.
@@ -71,24 +66,10 @@ make your code easier to read.
       does each method take? (you can use the `time` command when running your
       Python script)
 
-3. Consider the bouncing ball problem referred to above. Using the Euler
-   method with the same step-size as in the provided script, show how the
-   numerically generated trajectories appear in the *phase-plane* (plot $y$
-   against $v$). How should the trajectories look? Considering the
-   phase-plane argue that the Euler method is guaranteed to diverge in the way
-   that it does for any initial conditions and any step-size.
-
-4. Improve on the above by using the [SUVAT
-   equations](https://en.wikipedia.org/wiki/Equations_of_motion#Uniform_acceleration)
-   instead of the Euler method. Using the SUVAT equations you should be able
-   to calculate (on pen and paper) exactly what the error from each step of
-   the Euler method will be. How does this error depend on $\Delta t$ and
-   does this agree with your results from part 1?
-
-5. Considering that the ball bouncing problem is fully analytically solvable
-   find a formula for the height $y$ of the ball at time $t$ if the
-   initial conditions are that the ball starts on the ground but with an
-   upwards velocity of $5\,\mathrm{ms^{-2}}$. Use this to plot how the error
-   changes with time over approximately 10 bounces in both the SUVAT and Euler
-   method cases. Can you improve your collision handling code to make
-   the error exactly zero (up to rounding error)?
+3. (Essential!) Extend your Euler and RK4 routines to be able to work with
+   *systems* of ODEs. Use this to solve the 2nd order ODE $\ddot{x} = - x$
+   which is equivalent to the system $\dot{x} = y, \dot{y} = -x$. Plot the
+   results. What should the true solutions be? What goes wrong with the
+   numerical solutions if you run them over a large range of $t$? (This is
+   perhaps clearer if you plot $x$ against $\dot{x}$ rather than $x$ against
+   $t$.)
