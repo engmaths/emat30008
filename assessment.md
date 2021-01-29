@@ -37,7 +37,7 @@ your report via Blackboard and ensure that we have read access to your Git
 repository[^2].
 
 [^1]: Concise is good; 8&ndash;10 pages of good content is far better than 15 pages of waffle.
-[^2]: David Barton (`@dawbarton` on GitHub, GitLab, and BitBucket); Oscar Benjamin (`@oscarbenjamin` on GitHub); and Martin Homer (???)
+[^2]: David Barton (`@dawbarton` on GitHub, GitLab, and BitBucket); Oscar Benjamin (`@oscarbenjamin` on GitHub); and Martin Homer (`@martinhomer` on GitHub)
 
 ## Software
 
