@@ -89,6 +89,10 @@ the executable is with
 This tells me that the executable is in the `/usr/bin/` directory so that's
 the directory that needs to be on `PATH`.
 
+Here is a video showing how to add Python to your PATH:
+[Add Python to PATH on
+Windows](https://web.microsoftstream.com/video/c4c0ced6-c526-4696-99bc-14236b37cd28?list=studio)
+
 Another confusion can occur here for OSX users. OSX comes with a version of
 CPython preinstalled but that is the "system python" and you shouldn't mess
 with it. Install a *different* Python using Anaconda as above (or
