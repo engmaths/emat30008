@@ -1,12 +1,12 @@
-# Bouncing balls
+# Initial value problems for ODEs
 
 ## Assignment outline
 
 You will provide a code repository demonstrating your solutions to the
-problems below. You should also make a very short report including each of
-your figures. The report should explain the mathematical principles behind
-your analysis and interpret the numerical results. Take the time to format
-your figures nicely.
+problems below. You should also make a **very** short report including each of
+your figures. The report should briefly explain the mathematical principles
+behind your analysis and interpret the numerical results. Take the time to
+format your figures nicely.
 
 Your code should be well written and neatly separated into different .py
 files. Each should calculate one of the numbers or figures requested by the
@@ -14,9 +14,17 @@ sections below. Reduce duplication by putting frequently used code into
 separate modules and importing from them. Use comments, doc-strings etc to
 make your code easier to read.
 
+The aim here is to make our own version of scipy's `odeint` or Matlab's
+`ode45` functions:
+https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.odeint.html
+https://uk.mathworks.com/help/matlab/ref/ode45.html
+
+A script demonstrating the use of `odeint` can be found [here](solveode.py)
+
 ## Workflow
 
-1. Create a new git repository (e.g. on GitHub) called "bouncing".
+1. Create a new git repository (i.e. on GitHub) called something like
+   `emat30008`.
 
 2. Use `git clone <URL>` to clone the repository to your computer (bitbucket
    provides the command with the URL filled in so that you can paste it into a
@@ -34,12 +42,9 @@ make your code easier to read.
 
 5. When you're done working on any particular machine (or every now and again)
    use `git push` to send your changes to the git repository on your hosting
-   service (e.g. bitbucket).
+   service.
 
 6. As you're going along write a report including your findings (and figures).
-
-7. Submit a zip of your repository (the folder called "bouncing") including
-   all files and the .git folder along with a PDF of your report.
 
 ## Assignment problems
 
