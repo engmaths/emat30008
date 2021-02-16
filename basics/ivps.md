@@ -14,12 +14,13 @@ sections below. Reduce duplication by putting frequently used code into
 separate modules and importing from them. Use comments, doc-strings etc to
 make your code easier to read.
 
-The aim here is to make our own version of scipy's `odeint` or Matlab's
-`ode45` functions:
-https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.odeint.html
-https://uk.mathworks.com/help/matlab/ref/ode45.html
+The aim here is to make our own version of scipy's [odeint][] or Matlab's
+[ode45][] functions. A script demonstrating the use of `odeint` can be found
+[here](solveode.py)
 
-A script demonstrating the use of `odeint` can be found [here](solveode.py)
+[odeint]: https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.odeint.html
+[ode45]: https://uk.mathworks.com/help/matlab/ref/ode45.html
+
 
 ## Workflow
 
