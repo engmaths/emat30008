@@ -4,9 +4,6 @@
 
 ## Overview
 
-!!! warning
-    This description is not complete or finalised!
-
 This unit will be assessed by a single piece of coursework. Rather than being a
 discrete piece of work, the coursework will be the *cumulation of material
 covered each week of the course*. Each week will build on the previous and form
@@ -40,9 +37,6 @@ repository[^2].
 [^2]: David Barton (`@dawbarton` on GitHub, GitLab, and BitBucket); Oscar Benjamin (`@oscarbenjamin` on GitHub); and Martin Homer (`@martinhomer` on GitHub)
 
 ## Software
-
-!!! warning
-    This description is not complete or finalised!
 
 ### Description
 
@@ -109,9 +103,6 @@ university email address. Suggested providers are
 [^3]: Git has limited support for large data files &mdash; Git LFS &mdash; but it isn't that widespread yet.
 
 ### Marking
-
-!!! warning
-    This description is not complete or finalised!
 
 Your software will be marked both on the quality of the code (software engineering) and achievement of the scientific aims with roughly equal weighting.
 
