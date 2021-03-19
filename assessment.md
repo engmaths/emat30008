@@ -2,7 +2,7 @@
 
 # Assessment
 
-!!! info
+!!! note
     The deadline for submission is 13:00 on Friday 14 May 2021 (week 24). Submit your report via Blackboard; your code will be pulled from your Git repository at that point.
 
 ## Overview
@@ -68,7 +68,7 @@ Examples of running your code should be provided for both ODEs and PDEs. There s
 
 Even if you are not able to complete the entire coursework, you should aim, insofar as possible, to demonstrate an understanding of the software engineering principles and mathematical concepts taught in the course.
 
-!!! info
+!!! note
     The final code should be in the form of one or more `.py` files (*not* a Jupyter notebook) so they can be used as a library, though you may use a Jupyter notebook to *demonstrate* your code (with figures) if you wish.
 
 ### Git repository &mdash; version control
