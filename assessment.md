@@ -56,9 +56,6 @@ The code should take the form of a library (like, for example, the `solve_ivp` f
 * the parameter values, and
 * a starting guess for the initial variable values (and period of oscillation if appropriate).
 
-!!! info
-    The final code should be in the form of one or more `.py` files (*not* a Jupyter notebook) so they can be used as a library, though you may use a Jupyter notebook to *demonstrate* your code (with figures) if you wish.
-
 The function should return the branch of solutions calculated for a range of parameter values.
 
 Moreover, you should provide time simulation codes for both ODEs and PDEs to enable the (stable) solutions to be verified.
@@ -70,6 +67,9 @@ Your code should be documented appropriately.
 Examples of running your code should be provided for both ODEs and PDEs. There should be no user input (i.e., typing into the terminal) required when running the examples.
 
 Even if you are not able to complete the entire coursework, you should aim, insofar as possible, to demonstrate an understanding of the software engineering principles and mathematical concepts taught in the course.
+
+!!! info
+    The final code should be in the form of one or more `.py` files (*not* a Jupyter notebook) so they can be used as a library, though you may use a Jupyter notebook to *demonstrate* your code (with figures) if you wish.
 
 ### Git repository &mdash; version control
 
