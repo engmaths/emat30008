@@ -2,6 +2,9 @@
 
 # Assessment
 
+!!! info
+    The deadline for submission is 13:00 on Friday 14 May 2021 (week 24). Submit your report via Blackboard; your code will be pulled from your Git repository at that point.
+
 ## Overview
 
 This unit will be assessed by a single piece of coursework. Rather than being a
@@ -52,6 +55,9 @@ The code should take the form of a library (like, for example, the `solve_ivp` f
 * the differential equation (either an ODE or PDE) in a suitable form,
 * the parameter values, and
 * a starting guess for the initial variable values (and period of oscillation if appropriate).
+
+!!! info
+    The final code should be in the form of one or more `.py` files (*not* a Jupyter notebook) so they can be used as a library, though you may use a Jupyter notebook to *demonstrate* your code (with figures) if you wish.
 
 The function should return the branch of solutions calculated for a range of parameter values.
 
