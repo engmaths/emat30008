@@ -10,7 +10,12 @@ below.
 
 The aim here is to make our own version of scipy's [odeint][] or Matlab's
 [ode45][] functions. A script demonstrating the use of `odeint` can be found
-[here](solveode.py)
+[here](solveode.py). We should imagine that the code we write is going to be
+part of a large library of numerical routines that use each other and that can
+be used for different things. Each function we write here will be reused later
+as an elementary part of a more complicated numerical solver. The code should
+be well structured and modular and reusable. All functions should be clearly
+documented with examples of how to use them.
 
 [odeint]: https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.odeint.html
 [ode45]: https://uk.mathworks.com/help/matlab/ref/ode45.html
