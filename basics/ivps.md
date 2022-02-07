@@ -2,17 +2,11 @@
 
 ## Assignment outline
 
-You will provide a code repository demonstrating your solutions to the
-problems below. You should also make a **very** short report including each of
-your figures. The report should briefly explain the mathematical principles
-behind your analysis and interpret the numerical results. Take the time to
-format your figures nicely.
-
-Your code should be well written and neatly separated into different .py
-files. Each should calculate one of the numbers or figures requested by the
-sections below. Reduce duplication by putting frequently used code into
-separate modules and importing from them. Use comments, doc-strings etc to
-make your code easier to read.
+You will provide a code repository demonstrating your solutions to the problems
+that we will go through in the rest of this unit. More details will be given
+later about how to organise your submission but for now we will begin by
+creating the initial repository and adding some code for the basic exercises
+below.
 
 The aim here is to make our own version of scipy's [odeint][] or Matlab's
 [ode45][] functions. A script demonstrating the use of `odeint` can be found
@@ -25,7 +19,7 @@ The aim here is to make our own version of scipy's [odeint][] or Matlab's
 ## Workflow
 
 1. Create a new git repository (i.e. on GitHub) called something like
-   `emat30008`.
+   `emat30008`. Make sure that it is a *private* repo.
 
 2. Use `git clone <URL>` to clone the repository to your computer (bitbucket
    provides the command with the URL filled in so that you can paste it into a
@@ -45,7 +39,8 @@ The aim here is to make our own version of scipy's [odeint][] or Matlab's
    use `git push` to send your changes to the git repository on your hosting
    service.
 
-6. As you're going along write a report including your findings (and figures).
+6. As you're going along make brief notes including your findings (and
+   figures).
 
 ## Assignment problems
 
@@ -77,5 +72,8 @@ The aim here is to make our own version of scipy's [odeint][] or Matlab's
    which is equivalent to the system $\dot{x} = y, \dot{y} = -x$. Plot the
    results. What should the true solutions be? What goes wrong with the
    numerical solutions if you run them over a large range of $t$? (This is
-   perhaps clearer if you plot $x$ against $\dot{x}$ rather than $x$ against
-   $t$.)
+   clearer if you plot $x$ against $\dot{x}$ rather than $x$ against
+   $t$ and if you use timesteps that are not very small.)
+
+4. Bonus points: implement some other methods rather than just Euler and RK4.
+   There are loads of different 1-step integration methods.
