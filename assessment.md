@@ -3,7 +3,7 @@
 # Assessment
 
 !!! note
-    The **extended** deadline for submission is 13:00 on Friday 21 May 2021 (week 25). Submit your report via Blackboard; your code will be pulled from your Git repository at that point.
+    The deadline for submission is 13:00 on Friday 29th April 2022 (week 23). Submit your report via Blackboard; your code will be pulled from your Git repository at that point.
 
 ## Overview
 
