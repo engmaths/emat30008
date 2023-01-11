@@ -1,6 +1,6 @@
 # Python refresher and intro to selected topics
 
-This part is weeks 1-3 of the unit and will cover
+This part is weeks 1 (Week 13) of the unit and will cover
 
 * Refresher on Python and its standard library
 * Introduction to the standard scientific Python libraries
