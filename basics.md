@@ -1,27 +1,22 @@
-# Python refresher and intro to selected topics
+@def title = "Basics"
 
-This part is weeks 1 (Week 13) of the unit and will cover
+# Programming basics
 
-* Refresher on Python and its standard library
-* Introduction to the standard scientific Python libraries
-* Using functions, classes and modules to organise your code
-* Version control with git and github
-* Numerical methods for ODEs and inital value problems (Euler and RK4)
+Week 13 is basically a recap week.  Use the links below to refresh your
+knowledge of core Python programming topics
 
-## Week 1: Basics of Python
+* [Python fundamentals (Jupyter notebook)]()
+* [NumPy, SciPy, Matplotlib (Jupyter notebook)]()
+* [Version control with git (Jupyter notebook)]()
+* [Coding workflows](workflows/)
 
-1. [Setting up](settingup/)
-1. [Python basics](basics/)
-1. [Loops, conditionals, and functions](basics2/)
-1. [Data Structures](structures/)
-1. [File IO](fileio/)
+# Exercises for Week 13
 
-## Week 2: Version control and scientific Python
+Work on these exercises at during the lab session, drop-in session,
+and at home.  If you can complete all of these exercises without
+major issues, then you should have a good foundation for the unit.
+If you are struggling, then please seek help at the drop-in sessions
+on Mondays.
 
-1. [Version control](versioncontrol/)
-1. [Numpy](numpy/)
-1. [Matplotlib](matplotlib/)
-
-## Week 3: Initial value problems
-
-1. [Assignment](ivps/)
+* [Core python exercises](Week13-Exercises.pdf)
+* [Creating a GitHub repository]()

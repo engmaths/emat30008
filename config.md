@@ -7,7 +7,7 @@ The website_* must be defined for the RSS to work
 @def website_descr = "Course notes for the Scientific Computing unit"
 @def website_url   = "https://engmaths.github.io/emat30008/"
 
-@def author = "Oscar Benjamin, David A.W. Barton, Martin Homer"
+@def author = "Matthew Hennessy, David A.W. Barton"
 
 @def mintoclevel = 2
 

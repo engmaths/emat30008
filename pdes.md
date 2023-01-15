@@ -1,5 +1,10 @@
-@def title = "PDE problems"
+@def title = "Finite differences"
 
 # PDE problems
 
-All information and material for this part of the unit will be on Blackboard.
+Breakdown by week:
+
+* Week 19 --- finite differences
+* Week 20 --- the method of lines and explicit Euler
+* Week 21 --- implicit Euler and Crank-Nicholson
+* Week 22 --- sparse linear algebra and code profiling
