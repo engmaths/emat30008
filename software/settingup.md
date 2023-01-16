@@ -8,7 +8,7 @@ This unit will require the following software:
 2. NumPy, SciPy, Matplotlib
 3. Jupyter Notebooks
 4. Git
-5. Visual Studio Code (VS Code)
+5. Visual Studio Code
 
 ## Installing Python, NumPy, SciPy, Matplotlib, and Jupyter
 Python, NumPy, SciPy, Matplotlib, and Jupyter can be installed in one go by downloading and installing
@@ -38,7 +38,7 @@ If you use OSX, then to install git, just open a terminal type git and you shoul
 "install the OSX command line tools". Follow the instructions and you should have git
 installed.
 
-## Install VS Code
+## Install Visual Studio Code
 
 Simply [download from the website](https://code.visualstudio.com/) and install.
 
