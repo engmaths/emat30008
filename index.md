@@ -69,23 +69,20 @@ Each week we will provide
 
 * one hour (approximately) of pre-recorded material,
 * exercise sheets to be completed during the week,
-* a compulsory one hour session with live demonstrations, group exercises, and Q&amp;A, and
-* a two hour lab session to work on the exercises with teaching assistants available to help.
+* a compulsory two-hour lab session with live demonstrations, group exercises, and Q&amp;A, and
+* an optional drop-in session to work on the exercises with teaching assistants available to help.
 
 Group exercises will include activities such as pair coding &mdash; come ready
 to participate. All material will be released on Blackboard by (at least) the
 Friday morning of the week before.
 
-### Weeks 13&ndash;15: Oscar Benjamin
+### Week 13: Matt Hennessy
 
 * Introduction to Python
 * Version control with Git
 * Matplotlib and NumPy Python packages
-* Implementing Euler's method and Runge-Kutta
 
-### Weeks 16&ndash;20: David Barton
-
-Note that week 17 is a consolidation week (i.e., no timetabled teaching).
+### Weeks 14--17: David Barton
 
 * Numerical shooting for general ODE boundary value problems
 * Numerical shooting for periodic ODE boundary value problems
@@ -93,8 +90,18 @@ Note that week 17 is a consolidation week (i.e., no timetabled teaching).
 * More on version control with Git
 * Unit tests
 
-### Weeks 21&ndash;24: Martin Homer
+### Week 18
 
-* Finite difference method: introduction and basics
-* Problem extensions: changing the boundary conditions, sources/sinks, spatial inhomogeneity
-* Going beyond the heat equation in one space dimension
+* Reading week: no timetabled sessions
+
+### Weeks 19--22: Matt Hennessy
+
+* The finite difference method
+* Application to linear and nonlinear ODE boundary value prolems
+* Explicit and implicit methods for diffusion equations
+* Method of manufactured solutions
+* Sparse linear algebra and code profiling
+
+### Weeks 23-24: Matt and David
+
+* Advanced topics TBD
