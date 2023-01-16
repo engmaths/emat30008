@@ -3,7 +3,14 @@
 # Assessment
 
 !!! note
-    The deadline for submission is 13:00 on Friday 29th April 2022 (week 23). Submit your report via Blackboard; your code will be pulled from your Git repository at that point.
+    The deadline for submission is 13:00 on Thursday, 27 April 2023 (week 23).
+
+* [Overview](#overview)
+* [Software](#software)
+* [Git repository](#git-repository)
+* [Report](#report)
+* [Marking](#marking)
+* [Submission instructions](#submission)
 
 ## Overview
 
@@ -21,7 +28,7 @@ The final submission of the coursework should consist of
 1. a clean Git repository, i.e., `git status` gives no warnings of uncommitted
    files or changes, containing the software developed and the development
    history, and
-2. a short report (maximum 15 pages, aim for 8&ndash;10 pages) describing the
+2. a short report written as a Jupyter notebook (maximum 15 pages, aim for 8&ndash;10 pages) describing the
    software produced and the thought processes that you went through to create
    it[^1].
 
@@ -32,16 +39,13 @@ There is no need to try hide mistakes you made in the software development
 process &mdash; this is a learning process. If you haven't made any mistakes,
 you probably haven't learnt anything.
 
-The *deadline for coursework submission can be found on Blackboard*. Submit
-your report via Blackboard and ensure that we have read access to your Git
-repository[^2].
+Ensure
+that we have read access to your Git repository[^2].
 
 [^1]: Concise is good; 8&ndash;10 pages of good content is far better than 15 pages of waffle.
-[^2]: David Barton (`@dawbarton` on GitHub, GitLab, and BitBucket); Oscar Benjamin (`@oscarbenjamin` on GitHub); and Martin Homer (`@martinhomer` on GitHub)
+[^2]: David Barton (`@dawbarton` on GitHub); Matthew Hennessy (`@hennessymatt` on GitHub)
 
 ## Software
-
-### Description
 
 The aim of the coursework is to integrate the work you do from each week into a single piece of software. The software should be a general numerical continuation code that can track, under variations of a parameter in the system,  
 
@@ -69,16 +73,16 @@ Examples of running your code should be provided for both ODEs and PDEs. There s
 Even if you are not able to complete the entire coursework, you should aim, insofar as possible, to demonstrate an understanding of the software engineering principles and mathematical concepts taught in the course.
 
 !!! note
-    The final code should be in the form of one or more `.py` files (*not* a Jupyter notebook) so they can be used as a library, though you may use a Jupyter notebook to *demonstrate* your code (with figures) if you wish.
+    The final code should be in the form of one or more `.py` files (*not* a Jupyter notebook) so they can be used as a library.
 
-### Git repository &mdash; version control
+## Git repository
 
-Everyone should create a new Git repository for this unit. We
-expect you to commit *all your code* to this repository on a regular basis.
+Everyone should create a new Git repository, hosted on GitHub, for this unit.
+We expect you to commit  *all your code* to this repository on a regular basis.
 As a general rule, if you've been working on your uncommitted code for an hour
 (or more) then you should make another commit.
 
-**Remember to push your changes to the Git server periodically!** If
+**Remember to push your changes to GitHub  periodically!** If
 you leave any files on the lab machines from session to session, they may not be
 there when you return.
 
@@ -98,43 +102,7 @@ doing it), these should all be committed to the same repository.
 
 Read [Git Best Practices](https://sethrobertson.github.io/GitBestPractices/).
 
-You will need to set yourself up with a new user account (free!) on a public Git
-server; many providers provide enhanced functionality if you sign up with your
-university email address. Suggested providers are
-
-* [GitHub](https://github.com/) (recommended),
-* [GitLab](https://gitlab.com/), and
-* [BitBucket](https://bitbucket.org/).
-
 [^3]: Git has limited support for large data files &mdash; Git LFS &mdash; but it isn't that widespread yet.
-
-### Marking
-
-Your software will be marked both on the quality of the code (software engineering) and achievement of the scientific aims with roughly equal weighting.
-
-A **good first-class** answer would demonstrate
-
-* a high level of software engineering skills including
-  * consistently good use of version control software (small, regular commits),
-  * extensive use of abstractions, modularisation, and interfaces between functions allowing the use of arbitrary differential equations
-  * appropriately documented code,
-  * a range of code tests,
-  * elegant coding; and
-* significant scientific achievements including
-  * pseudo-arclength continuation implemented for arbitrary functions,
-  * discretisations of limit cycle oscillations of ODEs using numerical shooting,
-  * discretisations of diffusive PDEs using finite differences,
-  * time simulation codes to verify the long-time behaviour of ODEs and PDEs (e.g., Runge-Kutta and Crank-Nicholson).
-
-A **bare pass** answer would demonstrate
-
-* a basic level of software engineering skills including
-  * adequate use of version control software (some commits),
-  * some modularisation using functions,
-  * some documented code; and
-* some scientific achievements including
-  * discretisations of limit cycle oscillations of ODEs using numerical shooting,
-  * discretisations of diffusive PDEs using finite differences.
 
 ## Report
 
@@ -177,5 +145,42 @@ Key questions you should try to answer in your learning log are as follows.
 * What are the long-term implications of what I've learnt? (When will it be useful?)
 * What would I have done differently if I started the unit over again?
 * What will I do differently in the future?
-  
+
 You will probably find it helpful to make notes on the answers to these questions each week.
+
+
+## Marking
+
+Your software will be marked both on the quality of the code (software engineering) and achievement of the scientific aims with roughly equal weighting.
+
+A **good first-class** answer would demonstrate
+
+* a high level of software engineering skills including
+  * consistently good use of version control software (small, regular commits),
+  * extensive use of abstractions, modularisation, and interfaces between functions allowing the use of arbitrary differential equations
+  * appropriately documented code,
+  * a range of code tests,
+  * elegant coding; and
+* significant scientific achievements including
+  * pseudo-arclength continuation implemented for arbitrary functions,
+  * discretisations of limit cycle oscillations of ODEs using numerical shooting,
+  * discretisations of diffusive PDEs using finite differences,
+  * time simulation codes to verify the long-time behaviour of ODEs and PDEs (e.g., Runge-Kutta and Crank-Nicholson).
+
+A **bare pass** answer would demonstrate
+
+* a basic level of software engineering skills including
+  * adequate use of version control software (some commits),
+  * some modularisation using functions,
+  * some documented code; and
+* some scientific achievements including
+  * discretisations of limit cycle oscillations of ODEs using numerical shooting,
+  * discretisations of diffusive PDEs using finite differences.
+
+## Submission
+
+Please upload a PDF of your report (e.g. by printing as a PDF from your Jupyter Notebook)
+to Blackboard by the submission deadline.
+
+Your GitHub repository will be pulled for the final time immediately after
+the submission deadline.
