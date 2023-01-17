@@ -1,0 +1,40 @@
+<!doctype html> <html lang=en > <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/emat30008/libs/highlight/github.min.css"> <link rel=stylesheet  href="/emat30008/css/franklin.css"> <link rel=stylesheet  href="/emat30008/css/basic.css"> <link rel=icon  href="/emat30008/assets/favicon.png"> <title>Software check &mdash; Scientific Computing</title> <header> <div class=blog-name ><a href="">EMAT30008: Scientific Computing</a></div> <nav> <ul> <li><a href="/emat30008/">Overview</a> <li><a href="/emat30008/assessment/">Assessment</a> <li><a href="/emat30008/software/">Software</a> <li><a href="/emat30008/basics/">Basics</a> <li><a href="/emat30008/odes/">ODE problems</a> <li><a href="/emat30008/pdes/">PDE problems</a> </ul> <img src="/emat30008/assets/hamburger.svg" id=menu-icon > </nav> </header> <div class=franklin-content ><h1 id=software_check ><a href="#software_check" class=header-anchor >Software check</a></h1> <p>The first step is to open a terminal, which allows you to enter commands into a prompt. For Windows users, you can use Git CMD &#40;installed with git&#41; to open a terminal. Alternatively, you can open the Microsoft Store and install a program called Windows Terminal, which provides a nice Unix-like terminal.</p> <h2 id=step_1_checking_python ><a href="#step_1_checking_python" class=header-anchor >Step 1. Checking Python</a></h2> <p>In the terminal, type</p> <pre><code class="julia hljs">python --version</code></pre>
+<p>and then press enter.  If you see a message like &quot;Python 3.9.7&quot; printed to the screen, then Python has been installed correctly.  Please proceed to step 2.</p>
+<p>If you see a message that says something about the python command not being found, then your Python might have been installed correctly but your operating system does not know where to look for it because the environment variables were not set correctly during installation.  </p>
+<p>If you installed Python using Anaconda, then the easiest fix is to reinstall Anaconda and make sure you select the option to add Anadonda3 to your PATH environment variable &#40;see <a href="/emat30008/software/settingup">installation instructions</a>&#41;.</p>
+<h2 id=step_2_checking_numpy_scipy_and_matplotlib ><a href="#step_2_checking_numpy_scipy_and_matplotlib" class=header-anchor >Step 2. Checking NumPy, SciPy, and Matplotlib</a></h2>
+<p>In the same terminal, type</p>
+<pre><code class="julia hljs">python</code></pre>
+<p>and press enter.  If you are using Git CMD on Windows as your terminal, then you may find that nothing happens and in this case you will have to type</p>
+<pre><code class="julia hljs">python -i</code></pre>
+<p>instead.  Both commands will start the Python interpreter in interactive mode. This will allow you write and execute Python code.  Type the following three commands, pressing enter after each one:</p>
+<pre><code class="python hljs"><span class=hljs-keyword >import</span> numpy
+<span class=hljs-keyword >import</span> scipy
+<span class=hljs-keyword >import</span> matplotlib</code></pre>
+<p>If nothing happens, then these packages have been installed correctly.   Press Ctrl &#43; D or type</p>
+<pre><code class="python hljs">exit()</code></pre>
+<p>to exit the Python interpreter and proceed to Step 3.</p>
+<p>If you see something like</p>
+<pre><code class="python hljs"><span class=hljs-meta >&gt;&gt;&gt; </span><span class=hljs-keyword >import</span> numpy
+Traceback (most recent call last):
+  File <span class=hljs-string >&quot;&lt;stdin&gt;&quot;</span>, line <span class=hljs-number >1</span>, <span class=hljs-keyword >in</span> &lt;module&gt;
+ImportError: No module named numpy</code></pre>
+<p>then you don&#39;t have the scientific libraries installed. Or it could mean that you&#39;re running the wrong Python since it is possible to have many installed.</p>
+<p>If you installed Python through Anaconda, then you can install any missing packages through the Environment tab on the left side of the Anaconda Navigator.  Otherwise, you may need to use <code>pip</code> to install packages from a terminal.</p>
+<h2 id=step_3_checking_git ><a href="#step_3_checking_git" class=header-anchor >Step 3. Checking git</a></h2>
+<p>In the terminal, type</p>
+<pre><code class="julia hljs">git --version</code></pre>
+<p>If a message like &quot;git version 2.25.1&quot; is printed to the screen, then git is also correctly installed.  Move to Step 4.</p>
+<p>If you see a message about the git command not being found, then you will have to reinstall it.</p>
+<h2 id=step_4_checking_jupyter ><a href="#step_4_checking_jupyter" class=header-anchor >Step 4. Checking Jupyter</a></h2>
+<p>If you installed Anaconda, then Jupyter Notebooks should also be installed. To check, open the Anaconda Navigator and launch a Jupyter Notebook.  A notebook should appear in your default web browser.  Move to Step 5.</p>
+<h2 id=step_5_checking_visual_studio_code ><a href="#step_5_checking_visual_studio_code" class=header-anchor >Step 5. Checking Visual Studio Code</a></h2>
+<p>Open Visual Studio Code.  From the Terminal menu located at the top of the screen, select New Terminal.  This will open a terminal at the bottom of Visual Studio Code. In the terminal, type</p>
+<pre><code class="julia hljs">python --version</code></pre>
+<p>If you see the same message as before, e.g. Python 3.9.7, then Visual Studio Code should be installed and working correctly.</p>
+<div class=page-foot >
+  <div class=copyright >
+    &copy; Matthew Hennessy, David A.W. Barton. Last modified: January 17, 2023. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+  </div>
+</div>
+</div>
