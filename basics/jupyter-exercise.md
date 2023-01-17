@@ -18,7 +18,7 @@ T = T_\mathrm{air} + \frac{I^2 R}{h},
 $$
 where $T_\mathrm{air} = 23$ $^\circ$C is the temperature of the air surrounding the battery,
 $R = 3 \times 10^{-4}$ Ohms is electrical resistance of the battery, $I$ is the current being drawn
-from the battery, and $h = 1.86 \times 10^{-4}$ is the coefficient of heat transfer between the
+from the battery, and $h = 1.86 \times 10^{-4}$ W/$^\circ$C is the coefficient of heat transfer between the
 battery and the environment.  
 
 In this exercise, we will examine the thermal response of a battery to
@@ -28,5 +28,5 @@ be safe to use.
 1. Create a Jupyter Notebook called Battery.  This should create a new file called Battery.ipynb
 2. Convert the first cell into a markdown cell. Add a title using heading level one (#).  Then use heading level two (##) to create a section called "Introduction".  Then add some text and an equation to describe the problem you will be solving.  This text could be similar to that above.
 3. Create three new cells.  Turn the first into a markdown cell and use heading level two to create a section called "Maximum current".  In the second cell, use SciPy's `root` function to compute the current $I$ at which the battery temperature is equal to 60 $^\circ$C.  Convert the third cell into a markdown cell and write some text on your findings.
-4. Suppose that an alternating current of the form $I(t) = I_0 \sin (\omega t)$ is applied to the battery with $I_0 = 4$ A and $\omega = 314$ s$^{-1}$.  Use Matplotlib to plot the temperature of the battery as a function of time.
+4. Create two new cells.  In the first, add a section called "Alternating current".  Suppose that an alternating current of the form $I(t) = I_0 \sin (\omega t)$ is applied to the battery with $I_0 = 4$ A and $\omega = 314$ s$^{-1}$.  In the second cell, use Matplotlib to plot the temperature of the battery as a function of time.
 5. Bonus advanced question: The electric resistance is often a function of the temperature.  Assume that $R = R_0 \exp(\alpha T)$ with $R_0 = 3 \times 10^{-4}$ Ohms and $\alpha = 0.01$ 1/$^\circ$C.  Plot the battery temperature as a function of time when an alternating current is applied to it.  Compare your results to the case when the resistance $R$ is constant ($R = R_0$) and write some text that explains the results.

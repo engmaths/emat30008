@@ -1,22 +1,25 @@
 @def title = "Basics"
 
-# Programming basics
+# Week 13: Review and coding workflows
 
-Week 13 is basically a recap week.  Use the links below to refresh your
-knowledge of core Python programming topics
+Review of:
+* Python ([Video](), [Jupyter Notebook]())
+* NumPy, SciPy, Matplotlib ([Video](), [Jupyter Notebook]())
+* Version control with git and GitHub ([Video](), [Jupyter notebook]())
 
-* [Python fundamentals (Jupyter notebook)]()
-* [NumPy, SciPy, Matplotlib (Jupyter notebook)]()
-* [Version control with git (Jupyter notebook)]()
-* [Coding workflows](workflows/)
+Coding workflows:
+* Spyder
+* Visual Studio Code and the terminal
+* Jupyter Notebooks ([Notes](jupyter-notes/), [Video]())
+* Common terminal commands ([Notes](terminal/))
 
-# Exercises for Week 13
+# Week 13: Exercises
 
-Work on these exercises at during the lab session, drop-in session,
+Work on these exercises during the lab session, drop-in session,
 and at home.  If you can complete all of these exercises without
 major issues, then you should have a good foundation for the unit.
 If you are struggling, then please seek help at the drop-in sessions
 on Mondays.
 
-* [Core python exercises](Week13-Exercises.pdf)
-* [Creating a GitHub repository]()
+* [Core Python exercises](/assets/basics/Week13-Python.pdf)
+* [Using Jupyter notebooks](jupyter-exercise/)

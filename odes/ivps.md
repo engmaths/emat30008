@@ -23,12 +23,10 @@ documented with examples of how to use them.
 
 ## Workflow
 
-1. Create a new git repository (i.e. on GitHub) called something like
+1. Create a new git repository on GitHub called something like
    `emat30008`. Make sure that it is a *private* repo.
 
-2. Use `git clone <URL>` to clone the repository to your computer (bitbucket
-   provides the command with the URL filled in so that you can paste it into a
-   terminal.
+2. Use `git clone <URL>` to clone the repository to your computer
 
 3. Go into the folder with `cd` and use `git status` to check that everything
    is setup correctly.
