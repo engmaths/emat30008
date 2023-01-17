@@ -3,15 +3,19 @@
 # Week 13: Review and coding workflows
 
 Review of:
-* Python ([Video](), [Jupyter Notebook]())
-* NumPy, SciPy, Matplotlib ([Video](), [Jupyter Notebook]())
-* Version control with git and GitHub ([Video](), [Jupyter notebook]())
+* Python (Video, [Jupyter Notebook](/assets/basics/Week13-PythonReview.ipynb))
+* NumPy, SciPy, Matplotlib (Video, [Jupyter Notebook](/assets/basics/Week13-Packages.ipynb))
+* Version control with git and GitHub (Video, [Jupyter notebook](/assets/basics/Week13-Git.ipynb))
 
 Coding workflows:
-* Spyder
-* Visual Studio Code and the terminal
-* Jupyter Notebooks ([Notes](jupyter-notes/), [Video]())
+* Spyder (Video)
+* Visual Studio Code and the terminal (Video)
+* Jupyter Notebooks ([Notes](jupyter-notes/), Video)
 * Common terminal commands ([Notes](terminal/))
+
+To download the Jupyter Notebooks, right click the link and choose "Save link as"
+(or equivalent).
+
 
 # Week 13: Exercises
 
