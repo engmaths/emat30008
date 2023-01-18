@@ -73,8 +73,8 @@ Each week we will provide
 * an optional drop-in session to work on the exercises with teaching assistants available to help.
 
 Group exercises will include activities such as pair coding &mdash; come ready
-to participate. All material will be released on Blackboard by (at least) the
-Friday morning of the week before.
+to participate. All material will be released on Monday before the Friday lab
+session.
 
 ### Week 13: Matt Hennessy
 
@@ -102,6 +102,6 @@ Friday morning of the week before.
 * Method of manufactured solutions
 * Sparse linear algebra and code profiling
 
-### Weeks 23-24: Matt and David
+### Weeks 23--24: Matt and David
 
 * Advanced topics TBD

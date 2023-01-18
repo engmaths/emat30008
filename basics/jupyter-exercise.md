@@ -1,6 +1,6 @@
 @def title="Jupyter Notebook exercise"
 
-The aim of this exercise is to practice using Jupyter Notebooks to combine
+The aim of this exercise is to practise using Jupyter Notebooks to combine
 written text and Python code.
 
 Lithium-ion batteries power many of today's technologies such as phones,
