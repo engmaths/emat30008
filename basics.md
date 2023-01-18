@@ -5,16 +5,15 @@
 In Week 13, we will review:
 * Python ([Jupyter Notebook](/assets/basics/Week13-PythonReview.ipynb))
 * NumPy, SciPy, Matplotlib ([Jupyter Notebook](/assets/basics/Week13-Packages.ipynb))
-* Version control with git and GitHub ([Jupyter notebook](/assets/basics/Week13-Git.ipynb))
+* Version control with git and GitHub ([Jupyter Notebook](/assets/basics/Week13-Git.ipynb))
+
+To download the Jupyter Notebooks, right click the link and choose "Save link as"
+(or equivalent).
 
 In addition, we will discuss coding workflows:
 * Spyder
 * Visual Studio Code and the terminal
 * Jupyter Notebooks ([Notes](jupyter-notes/))
-* Common terminal commands ([Notes](terminal/))
-
-To download the Jupyter Notebooks, right click the link and choose "Save link as"
-(or equivalent).
 
 
 # Week 13: Exercises

@@ -10,6 +10,9 @@ This unit will require the following software:
 4. Git
 5. Visual Studio Code
 
+You will need to set up a user account on [GitHub](https://github.com/) if
+you do not already have one.
+
 ## Installing Python, NumPy, SciPy, Matplotlib, and Jupyter
 Python, NumPy, SciPy, Matplotlib, and Jupyter can be installed in one go by downloading and installing
 [Anaconda](https://www.anaconda.com/), which is recommended.
