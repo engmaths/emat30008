@@ -180,7 +180,8 @@ A **bare pass** answer would demonstrate
 ## Submission
 
 Please upload a PDF of your report (e.g. by printing as a PDF from your Jupyter Notebook)
-to Blackboard by the submission deadline.
+to Blackboard by the submission deadline.  Be sure to include the Jupyter Notebook
+itself (i.e. the .ipynb file) in your GitHub repository.
 
 Your GitHub repository will be pulled for the final time immediately after
 the submission deadline.
