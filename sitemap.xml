@@ -20,6 +20,12 @@
     <priority>0.5</priority>
 </url>
 <url>
+    <loc>https://engmaths.github.io/emat30008/software/terminal/index.html</loc>
+    <lastmod>2023-01-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>https://engmaths.github.io/emat30008/basics/jupyter-exercise/index.html</loc>
     <lastmod>2023-01-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -57,12 +63,6 @@
 </url>
 <url>
     <loc>https://engmaths.github.io/emat30008/basics/old/fileio/index.html</loc>
-    <lastmod>2023-01-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://engmaths.github.io/emat30008/basics/terminal/index.html</loc>
     <lastmod>2023-01-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -111,6 +111,12 @@
 </url>
 <url>
     <loc>https://engmaths.github.io/emat30008/index.html</loc>
+    <lastmod>2023-01-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://engmaths.github.io/emat30008/software/git/index.html</loc>
     <lastmod>2023-01-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
