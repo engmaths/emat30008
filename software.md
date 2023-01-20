@@ -11,3 +11,5 @@ installed and configured if you are using your own computer
 Cheat sheets with common commands:
 * [Terminal](terminal/)
 * [git](git/)
+* [Jupyter Notebooks](jupyter/)
+* [Markdown](https://www.markdownguide.org/cheat-sheet/)

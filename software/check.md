@@ -1,7 +1,7 @@
 # Software check
 
 The first step is to open a terminal, which allows you to enter commands into
-a prompt.  For Windows users, you can use Git CMD (installed with git) to open a
+a prompt.  For Windows users, you can use Git Bash (installed with git) to open a
 terminal.  Alternatively, you can open the Microsoft Store and install a program
 called Windows Terminal, which provides a nice Unix-like terminal.
 
