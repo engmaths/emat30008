@@ -34,7 +34,7 @@ In the same terminal, type
 ```
 python
 ```
-and press enter.  If you are using Git CMD on Windows as your terminal,
+and press enter.  If you are using Git Bash on Windows as your terminal,
 then you may find that nothing happens and in this case you will have to type
 ```
 python -i
