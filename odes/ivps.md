@@ -20,7 +20,6 @@ documented with examples of how to use them.
 [odeint]: https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.odeint.html
 [ode45]: https://uk.mathworks.com/help/matlab/ref/ode45.html
 
-
 ## Workflow
 
 1. Create a new git repository on GitHub called something like
@@ -55,18 +54,15 @@ documented with examples of how to use them.
 
    1. Ensure that you have a function called `euler_step` that does a single Euler step.
    1. Also make a function called `solve_to` which solves from $x_1,t_1$ to $x_2,t_2$
-      in steps no bigger than `deltat_max`.
-   1. Make a function called `solve_ode` that uses `solve_to` and `euler_step`
-      to generate a series of numerical solution estimates $x_1,x_2,x_3,\dots$.
-      This should be similar to scipy's `odeint` function.
+      in steps no bigger than `deltat_max`. This should be similar to scipy's `odeint` function.
 
 2. Repeat part 1 using the [4th-order Runge-Kutta
    method](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods#The_Runge.E2.80.93Kutta_method).
-   1. Make it so that when calling `solve_ode` you can choose whether to use the Euler
+   1. Make it so that when calling `solve_to` you can choose whether to use the Euler
       method or RK4.
-   1. How does the error depend on $\Delta t$ now? How does this compare
+   2. How does the error depend on $\Delta t$ now? How does this compare
       with the error for the Euler method (put this in the same plot)?
-   1. Find step-sizes for each method that give you the same error - how long
+   3. Find step-sizes for each method that give you the same error - how long
       does each method take? (you can use the `time` command when running your
       Python script)
 
