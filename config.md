@@ -28,3 +28,7 @@ For instance:
 -->
 \newcommand{\R}{\mathbb R}
 \newcommand{\scal}[1]{\langle #1 \rangle}
+\newcommand{\td}[2]{\frac{\mathrm{d} #1}{\mathrm{d}#2}}
+\newcommand{\tdd}[2]{\frac{\mathrm{d}^2 #1}{\mathrm{d}#2^2}}
+<!-- \newcommand{\vec}[1]{\boldsymbol{#1}} -->
+\newcommand{\tens}[1]{\mathbf{#1}}
