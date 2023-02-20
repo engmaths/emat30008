@@ -1,6 +1,8 @@
 @def title = "Finite difference methods"
 
-# Overview
+# Week 19: Finite difference methods
+
+## Overview
 
 This week will introduce the idea of finite difference methods and how they
 can be used to solve boundary value problems (BVPs).  We will first revisit
@@ -9,7 +11,7 @@ We will then see how the finite difference method can be used to solve BVPs
 for linear and nonlinear ordinary differential equations (ODEs).  The code that you develop this week will form an essential role in the upcoming weeks when
 the focus shifts towards numerically solving partial differential equations.
 
-# Supplementary material
+## Supplementary material
 
 Use the links below to find additional notes on
 
@@ -17,7 +19,7 @@ Use the links below to find additional notes on
 * [Solving the nonlinear Poisson equation with Newton's method](/pdes/nonlinear_poisson.pdf)
 
 
-# Exercise
+## Exercise
 
 The goal of the exercise this week is to create a BVP solver that is capable
 of finding numerical solutions to ODEs of the form
@@ -47,7 +49,7 @@ from discretising the problem will be solved.  For example, the discrete
 problem could be solved using SciPy's `root` function, NumPy's `solve` function (if the problem is linear),
 or your own implementation of Newton's method.
 
-## Steps
+### Steps
 
 There is a lot going on in this problem.  These steps are designed so that
 you can see how to build your code up from simpler problems.  Test your code extensively and only add complexity once you are certain it works correctly.
