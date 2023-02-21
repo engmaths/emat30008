@@ -16,7 +16,7 @@ For example, the `euler_step` and `solve_to` functions you created in Week 14 ca
 
 Use the links below to find additional notes on
 
-* [Exact solutions to the diffusion equation]()
+* [Some solutions to the diffusion equation](/pdes/diffusion_equation.pdf)
 
 
 ## Exercise
@@ -107,6 +107,41 @@ Interpret these results in the context of your solution to Exercise 4 from Week 
 
 Update your code so that it can also account for time-dependent Neumann and Robin boundary conditions.
 
+~~~
+</li><li>
+~~~
+
+(Bonus) Solve the Fisher-KPP equation given by
+$$
+\pd{u}{t} = D\pdd{u}{x} + r u (1 - u)
+$$
+on the domain $0 \leq x \leq 10$.  The boundary and initial conditions are
+$$
+u(0,t) = 1, \quad u(10,t) = 0, \quad u(x,0) = 0.
+$$
+You can take $D = 0.1$ and $r = 2$.  Run your simulation until $t = 20$.
+What types of solutions do you see?
+
+~~~
+</li><li>
+~~~
+(Bonus) The Allen-Cahn equation describes how a homogeneous mixture of two liquids A and B will spontaneously separate into its components (e.g. a mixture of oil and water separating into blobs of pure oil suspended in pure water).  This process is called
+[phase separation](https://en.wikipedia.org/wiki/Phase_separation).  
+The Allen-Cahn equation is given by
+$$
+\pd{u}{t} = \epsilon^2 \pdd{u}{x} + u - u^3,
+$$
+where $u$ is a concentration-like variable defined as follows:
+$u = -1$ corresponds to pure liquid A, $u = 1$ corresponds to pure liquid
+B, and $u = 0$ means there is a 50/50 mix of A and B.  
+
+Use your code to solve the Allen-Cahn equation on the domain $0 \leq x \leq 1$ with $\epsilon = 0.01$ until $t = 50$.  The boundary conditions are
+$$
+\left.\pd{u}{x}\right|_{x=0} = 0, \quad \left.\pd{u}{x}\right|_{x=1} = 0.
+$$
+Set the initial condition to be uniformly distributed random numbers between $-0.001$ and $0.001$.  You will need to use a relatively fine mesh to resolve the solution so try taking $N = 150$.
+
+Try solving this problem with various methods (explicit Euler, RK, `solve_ivp`) to get a feel for the pros and cons of each and to determine which method works best.
 
 ~~~
 </li></ol>
