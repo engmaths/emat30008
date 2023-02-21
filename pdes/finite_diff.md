@@ -89,11 +89,12 @@ Once you've developed code for the problem with $q(x) = 1$, add an $x$ dependenc
 </li><li>
 ~~~
 
-Generalise your code so that the source term $q$ can now depend on the solution $u$ as well as a parameter $\mu$.  Use your code to solve the problem
+Generalise your code so that the source term $q$ can now depend on the solution $u$ as well as a parameter $\mu$.  Use your code to solve the [Bratu problem]https://doi.org/10.1016/j.camwa.2013.10.003)
 \begin{align}
 D \tdd{u}{x} + e^{\mu u} = 0, \qquad u(0) = u(1) = 0,
 \end{align}
 when $D = 1.0$ and $\mu = 0.1$.  Plot the solution $u$ as a function of $x$.
+The Bratu problem appears in mathematical models of combustion and [thermal runaway](https://en.wikipedia.org/wiki/Thermal_runaway), in which case $u$ is the temperature.
 
 **Hint**: When $q$ depends nonlinearly on the solution $u$, then a good initial guess of the solution is usually required for the nonlinear solver (e.g. SciPy's `root` function or Newton's method) to converge.  For this problem, a good initial guess can be found by noting that when $\mu$ is small, the exponential can be approximated as $e^{\mu u} \approx 1$.  The solution in this case is given by (6), which can be used to form an initial guess.
 

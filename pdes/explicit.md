@@ -92,7 +92,7 @@ and initial condition $u(x,0) = f(x)$.  Use the supplementary notes to find exac
 </li><li>
 ~~~
 
-Use your code to solve the problem
+Use your code to solve the dynamic Bratu problem
 \begin{align}
 \pd{u}{t} = D \pdd{u}{x} + e^{\mu u},
 \end{align}
