@@ -108,10 +108,16 @@ Interpret these results in the context of your solution to Exercise 4 from Week 
 Update your code so that it can also account for time-dependent Neumann and Robin boundary conditions.
 
 ~~~
-</li><li>
+</li></ol>
 ~~~
 
-(Bonus) Solve the Fisher-KPP equation given by
+## Bonus problems
+
+~~~
+<ol><li>
+~~~
+
+Solve the Fisher-KPP equation given by
 $$
 \pd{u}{t} = D\pdd{u}{x} + r u (1 - u)
 $$
@@ -125,7 +131,7 @@ What types of solutions do you see?
 ~~~
 </li><li>
 ~~~
-(Bonus) The Allen-Cahn equation describes how a homogeneous mixture of two liquids A and B will spontaneously separate into its components (e.g. a mixture of oil and water separating into blobs of pure oil suspended in pure water).  This process is called
+The Allen-Cahn equation describes how a homogeneous mixture of two liquids A and B will spontaneously separate into its components (e.g. a mixture of oil and water separating into blobs of pure oil suspended in pure water).  This process is called
 [phase separation](https://en.wikipedia.org/wiki/Phase_separation).  
 The Allen-Cahn equation is given by
 $$
