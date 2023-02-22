@@ -96,7 +96,7 @@ D \tdd{u}{x} + e^{\mu u} = 0, \qquad u(0) = u(1) = 0,
 when $D = 1.0$ and $\mu = 0.1$.  Plot the solution $u$ as a function of $x$.
 The Bratu problem appears in mathematical models of combustion and [thermal runaway](https://en.wikipedia.org/wiki/Thermal_runaway), in which case $u$ is the temperature.
 
-**Hint**: When $q$ depends nonlinearly on the solution $u$, then a good initial guess of the solution is usually required for the nonlinear solver (e.g. SciPy's `root` function or Newton's method) to converge.  For this problem, a good initial guess can be found by noting that when $\mu$ is small, the exponential can be approximated as $e^{\mu u} \approx 1$.  The solution in this case is given by (6), which can be used to form an initial guess.
+**Hint**: If $q$ depends nonlinearly on the solution $u$, then a good initial guess of the solution is usually required for the nonlinear solver (e.g. SciPy's `root` function or Newton's method) to converge.  For this problem, a good initial guess can be found by noting that when $\mu$ is small, the exponential can be approximated as $e^{\mu u} \approx 1$.  The solution in this case is given by (5), which can be used to form an initial guess.
 
 ~~~
 </li><li>
