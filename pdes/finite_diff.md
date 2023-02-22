@@ -101,7 +101,7 @@ The Bratu problem appears in mathematical models of combustion and [thermal runa
 ~~~
 </li><li>
 ~~~
-Use numerical continuation to compute the solution to (7) when $D = 1.0$ and for $0 \leq \mu \leq 4$.  Plot the maximum of $u$ as a function of $\mu$.
+Use numerical continuation to compute the solution to (6) when $D = 1.0$ and for $0 \leq \mu \leq 4$.  Plot the maximum of $u$ as a function of $\mu$.
 
 **Hint**: use pseudo-arclength continuation to see the full picture.
 
