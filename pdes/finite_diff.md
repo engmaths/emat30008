@@ -89,7 +89,7 @@ Once you've developed code for the problem with $q(x) = 1$, add an $x$ dependenc
 </li><li>
 ~~~
 
-Generalise your code so that the source term $q$ can now depend on the solution $u$ as well as a parameter $\mu$.  Use your code to solve the [Bratu problem]https://doi.org/10.1016/j.camwa.2013.10.003)
+Generalise your code so that the source term $q$ can now depend on the solution $u$ as well as a parameter $\mu$.  Use your code to solve the [Bratu problem](https://doi.org/10.1016/j.camwa.2013.10.003)
 \begin{align}
 D \tdd{u}{x} + e^{\mu u} = 0, \qquad u(0) = u(1) = 0,
 \end{align}
