@@ -113,16 +113,16 @@ Update your code so that it can also account for Dirichlet, Neumann, and Robin b
 ## Bonus problems
 
 ~~~
-<ol><li>
+<ul><li>
 ~~~
 
 Solve the Fisher-KPP equation given by
 $$
 \pd{u}{t} = D\pdd{u}{x} + r u (1 - u)
 $$
-on the domain $0 \leq x \leq 10$.  The boundary and initial conditions are
+on the domain $0 \leq x \leq 1$.  The boundary and initial conditions are
 $$
-u(0,t) = 1, \qquad \left.\pd{u}{x}\right|_{x=10} = 0, \qquad u(x,0) = 0.
+u(0,t) = 1, \qquad \left.\pd{u}{x}\right|_{x=1} = 0, \qquad u(x,0) = 0.
 $$
 You can take $D = 0.1$ and $r = 2$.  Run your simulation until $t = 20$.
 What types of solutions do you see?
@@ -149,5 +149,5 @@ Set the initial condition to be uniformly distributed random numbers between $-0
 Try solving this problem with various methods (explicit Euler, RK, `solve_ivp`) to get a feel for the pros and cons of each and to determine which method works best.
 
 ~~~
-</li></ol>
+</li></ul>
 ~~~
