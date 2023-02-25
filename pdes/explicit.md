@@ -79,13 +79,12 @@ which you can use to test your code.
 </li><li>
 ~~~
 
-Extend your code so that it can account for a source term and
-time-dependent boundary conditions.  That is, you code should be
-able to solve
+Extend your code so that it can account for non-homogeneous Dirichlet boundary conditions and source term in the diffusion equation.
+That is, you code should be able to solve
 $$
 \pd{u}{t} = D \pdd{u}{x} + q(x, t, u; \mu), \\
 $$
-with boundary conditions $u(a, t) = \alpha(t)$,  $u(b,t) = \beta(t)$
+with boundary conditions $u(a, t) = \alpha$,  $u(b,t) = \beta$
 and initial condition $u(x,0) = f(x)$.  Use the supplementary notes to find exact solutions that you can use to test your code with.
 
 ~~~
@@ -105,7 +104,7 @@ Interpret these results in the context of your solution to Exercise 4 from Week 
 </li><li>
 ~~~
 
-Update your code so that it can also account for time-dependent Neumann and Robin boundary conditions.
+Update your code so that it can also account for Dirichlet, Neumann, and Robin boundary conditions with time-dependent coefficients.
 
 ~~~
 </li></ol>
@@ -123,7 +122,7 @@ $$
 $$
 on the domain $0 \leq x \leq 10$.  The boundary and initial conditions are
 $$
-u(0,t) = 1, \quad u(10,t) = 0, \quad u(x,0) = 0.
+u(0,t) = 1, \qquad \left.\pd{u}{x}\right|_{x=10} = 0, \qquad u(x,0) = 0.
 $$
 You can take $D = 0.1$ and $r = 2$.  Run your simulation until $t = 20$.
 What types of solutions do you see?
