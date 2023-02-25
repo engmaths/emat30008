@@ -112,18 +112,45 @@ Use numerical continuation to compute the solution to (6) when $D = 1.0$ and for
 Update your code so that it can account for Dirichlet, Neumann, or Robin boundary conditions.
 
 ~~~
-</li><li>
+</li></ol>
 ~~~
 
-(Bonus) Think about extending your solver to other types of ODEs.  For example, try to solve the problem
+## Bonus problems
+
+Think about extending your solver to other types of ODEs.  For example:
+
+~~~
+<ul><li>
+~~~
+The steady reaction-convection-diffusion equation is given by
 $$
 D \tdd{u}{x} - v\td{u}{x}+  q(x, u; \mu) = 0,
 $$
-where $v$ is a parameter.
-This equation is called the steady reaction-convection-diffusion equation.
-In this case, what happens when $D \ll |v|$?  How might you adapt your
+where $v$ is a parameter (usually the velocity).  Use your solver to
+compute solutions when $u(0) = 0$, $u(1) = 0$, $v = 1$, and $q = 1$.
+Take $D = 1$, $D = 0.1$, and $D = 0.01$.
+What happens to the solution when $D \ll  1$.  How might you adapt your
 code to handle this case efficiently?
 
 ~~~
-</li></ol>
+</li><li>
+~~~
+
+The linear beam equation is given by
+$$
+-B \frac{\mathrm{d}^4 u}{\mathrm{d}x^4} + q(x) = 0,
+$$
+where $B$ is the bending modulus and $q(x)$ is a load applied along the beam.
+Since this is a fourth-order ODE, four boundary conditions are required, two at each end.  Conditions are usually imposed on $u$, $\mathrm{d}u/\mathrm{d}x$, $\mathrm{d}^2 u/\mathrm{d}x^2$, or $\mathrm{d}^3u/\mathrm{d}x^3$.
+
+Try to solve the linear beam equation with $q(x) = 1$ and the boundary conditions
+$$
+u(0) = 0, \quad \left.\tdd{u}{x}\right|_{x=0} = 0,
+\quad
+u(1) = 0, \quad \left.\tdd{u}{x}\right|_{x=1} = 0.
+$$
+**Hint**: a finite-difference approximation to the fourth derivative can be obtained using the approach in the supplementary notes or [found online](https://en.wikipedia.org/wiki/Finite_difference_coefficient).
+
+~~~
+</li></ul>
 ~~~
