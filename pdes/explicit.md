@@ -120,9 +120,9 @@ Solve the Fisher-KPP equation given by
 $$
 \pd{u}{t} = D\pdd{u}{x} + r u (1 - u)
 $$
-on the domain $0 \leq x \leq 1$.  The boundary and initial conditions are
+on the domain $0 \leq x \leq 10$.  The boundary and initial conditions are
 $$
-u(0,t) = 1, \qquad \left.\pd{u}{x}\right|_{x=1} = 0, \qquad u(x,0) = 0.
+u(0,t) = 1, \qquad \left.\pd{u}{x}\right|_{x=10} = 0, \qquad u(x,0) = 0.
 $$
 You can take $D = 0.1$ and $r = 2$.  Run your simulation until $t = 20$.
 What types of solutions do you see?
@@ -138,7 +138,7 @@ $$
 $$
 where $u$ is a concentration-like variable defined as follows:
 $u = -1$ corresponds to pure liquid A, $u = 1$ corresponds to pure liquid
-B, and $u = 0$ means there is a 50/50 mix of A and B.  
+B, and $u = 0$ corresponds to a 50/50 mix of A and B.  
 
 Use your code to solve the Allen-Cahn equation on the domain $0 \leq x \leq 1$ with $\epsilon = 0.01$ until $t = 50$.  The boundary conditions are
 $$
