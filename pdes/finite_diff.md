@@ -149,7 +149,7 @@ u(0) = 0, \quad \left.\tdd{u}{x}\right|_{x=0} = 0,
 \quad
 u(1) = 0, \quad \left.\tdd{u}{x}\right|_{x=1} = 0.
 $$
-**Hint**: there are a few ways to tackle this problem.  One approach is to use
+**Hint**: there are a couple of ways to tackle this problem.  One approach is to use
 a finite-difference formula for the fourth derivative, which can be derived using the approach in the supplementary notes or [found online](https://en.wikipedia.org/wiki/Finite_difference_coefficient).  An alternative approach is to split the equation into a system of second-order differential equations by letting $v = \mathrm{d}^2 u / \mathrm{d}x^2$.
 
 ~~~
