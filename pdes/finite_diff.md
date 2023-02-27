@@ -127,10 +127,11 @@ $$
 D \tdd{u}{x} - v\td{u}{x}+  q(x, u; \mu) = 0,
 $$
 where $v$ is a parameter (usually the velocity).  Use your solver to
-compute solutions when $u(0) = 0$, $u(1) = 0$, $v = 1$, and $q = 1$.
-Take $D = 1$, $D = 0.1$, and $D = 0.01$.
-What happens to the solution when $D \ll  1$.  How might you adapt your
-code to handle this case efficiently?
+compute solutions when the boundary conditions are $u(0) = 0$ and $u(1) = 0$ and the parameter values are $D = 1$, $v = 1$, and $q = 1$.  
+
+Now compute solutions for smaller values of $D$, for example, $D = 0.1$, $D = 0.05$, and $D = 0.01$.  What happens to the solution as $D$ decreases?  
+How might you adapt your
+code to handle the case $D \ll 1$ efficiently?
 
 ~~~
 </li><li>

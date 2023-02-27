@@ -79,8 +79,8 @@ which you can use to test your code.
 </li><li>
 ~~~
 
-Extend your code so that it can account for non-homogeneous Dirichlet boundary conditions and source term in the diffusion equation.
-That is, you code should be able to solve
+Extend your code so that it can account for non-homogeneous Dirichlet boundary conditions and a source term in the diffusion equation.
+That is, your code should be able to solve
 $$
 \pd{u}{t} = D \pdd{u}{x} + q(x, t, u; \mu), \\
 $$
