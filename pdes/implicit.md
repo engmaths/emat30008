@@ -6,9 +6,9 @@
 
 Last week we saw how the finite difference method could be used to convert the diffusion equation into a system of ODEs.  This ODE system could be solved with the explicit Euler or Runge-Kutta methods, but only if the time step $\Delta t$ was sufficiently small.  
 
-This week will focus on implicit methods for the linear diffusion equation, namely the implicit Euler and Crank-Nicolson methods.  Both of these methods are *unconditionally stable*, meaning that they will work for any time step size $\Delta t$.  However, both of these methods require solving equations at each time step, which comes at a high computational cost.  Hence, there is a tradeoff between being able to take fewer time steps to obtain a numerical solution and the higher computational cost per time step.
+This week we will focus on implicit methods for the linear diffusion equation, namely the implicit Euler and Crank-Nicolson methods.  Both of these methods are *unconditionally stable*, meaning that they will work for any time step size $\Delta t$.  However, both of these methods require solving a linear system of equations at each time step, which comes at a high computational cost.  Hence, there is a tradeoff between being able to take fewer time steps to obtain a numerical solution and the higher computational cost per time step.
 
-We will also introduct the concepots of code benchmarking and profiling, which are ways of analysing the performance of code.  Benchmarkin and profiling can help with code optimisation and selecting the best method for a given problem.  The `timeit` and `cProfile` packages will be introduced as tools for benchmarking and profiling.
+We will also introduce the concepts of code benchmarking and profiling, which are ways of analysing the performance of code.  Benchmarking and profiling can help with code optimisation and selecting the best method for a given problem.  The `timeit` and `cProfile` packages will be introduced as tools for benchmarking and profiling.
 
 
 
@@ -16,7 +16,7 @@ We will also introduct the concepots of code benchmarking and profiling, which a
 
 Use the links below to find additional notes on
 
-* [Derivation of Crank-Nicolson]()
+* [Derivation of Crank-Nicolson](/pdes/crank_nicolson.pdf)
 
 
 ## Exercise
@@ -39,16 +39,16 @@ Benchmarking will be used to compare the performance of the various methods you 
 
 (Essential) Consider the linear diffusion equation
 $$
-\pd{u}{t} = \pdd{u}{x}
+\pd{u}{t} = D \pdd{u}{x}
 $$
 with boundary conditions $u(0,t) = 0$ and $u(1,t) = 0$ and initial condition
-$u(x,0) = \sin(\pi x)$.  Solve this problem with the implicit Euler and Crank-Nicolson methods, using the same number of grid points, $N+1$, and time-step size $\Delta t$.  
+$u(x,0) = \sin(\pi x)$.  Solve this problem with the implicit Euler and Crank-Nicolson methods, using $D = 0.1$, $N = 100$ (so 101 grid point), and $\Delta t = 0.1$.  How does the size of $\Delta t$ compare to the maximum size of $\Delta t$ that could be used for the explicit Euler method?
 
 ~~~
 </li><li>
 ~~~
 
-(Essential) Using your numerical solutions from Step 1, compute $u(0.5, 2)$.  Compare your numerical values of $u(0.5,2)$ to the exact value of $\exp(-2\pi^2)$.  Which method leads to a more accurate approximation and why?
+(Essential) Using your numerical solutions from Step 1, compute $u(0.5, 2)$.  Compare your numerical values of $u(0.5,2)$ to the exact value of $\exp(-0.2\pi^2)$.  Which method leads to a more accurate approximation and why?
 
 ~~~
 </li><li>
@@ -72,7 +72,7 @@ Generalise your implementations of implicit Euler and Crank-Nicolson so they can
 </li></ol>
 ~~~
 
-## Bonus problem
+## Bonus problems
 
 ~~~
 <ul><li>
@@ -94,6 +94,22 @@ Solve this problem until $t = 10$ by taking $D = 0.05$ and $L = 10$ and using $N
 
 **Hint**: if you want to use an implicit method, then you will need to think about how to account for the linear dependence of $u$ in the source term.
 
+~~~
+</li><li>
+~~~
+
+The computational benefits of implicit methods over explicit methods are showcased in the context of PDEs with high-order derivatives.  For example, consider the viscous beam equation
+$$
+\pd{u}{t} = -B \frac{\partial^4 u}{\partial x^4} + q.
+$$
+Applying the explicit Euler method to this problem requires the time step $\Delta t$ to be proportional to $(\Delta x)^4$.  Thus, if $\Delta x = 0.01$ for example, then $\Delta t \approx 10^{-8}$!  This time-step restriction makes the application of explicit methods highly impractical for these problems.
+
+Use an implicit method to solve Eqn (5) with the following boundary conditions:
+$$
+u(0,t) = 0, \quad \left.\pdd{u}{x}\right|_{x=0} = 0, \quad
+u(1,t) = 0, \quad \left.\pdd{u}{x}\right|_{x=1} = 0.
+$$
+As an initial condition, set $u(x,0) = 0$.  Compare your solution to that obtained from the [Week 19](/pdes/finite_diff/) exercises.
 ~~~
 </li></ul>
 ~~~
