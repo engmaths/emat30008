@@ -26,7 +26,7 @@ $$
 \pd{u}{t} = D \pdd{u}{x} + q(x, t, \mu).
 $$
 Note that the source term $q$ no longer depends on the solution $u$.  
-Implicit methods for *nonlinear* diffusion equations, in which $q$ depends nonlinearly on $u$, will be presented in [Week 22]().
+Implicit methods for *nonlinear* diffusion equations, in which $q$ depends nonlinearly on $u$, will be presented in [Week 22](/pdes/implicit_nonlinear/).
 
 Benchmarking will be used to compare the performance of the various methods you have implemented so far.  Code profiling  will be used to locate bottlenecks in your code and identity potential areas for improvement.
 
