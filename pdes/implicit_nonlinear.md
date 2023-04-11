@@ -4,9 +4,9 @@
 
 ## Overview
 
-This week, we continue our study of implicit methods by looking at how they can be applied to nonlinear PDEs.  Applying the implicit Euler method to a nonlinear PDE leads to a nonlinear system of algebraic equations.  This nonlinear system must be solved using a homemade Newton's method or SciPy's `root` function at each time step.  Alternatively, an *implicit-explicit* (IMEX) method can be used to produce a linear algebraic system that can be solved using NumPy's `linalg.solve` function (or SciPy's `root function`).
+This week, we continue our study of implicit methods by looking at how they can be applied to nonlinear PDEs.  Applying the implicit Euler method to a nonlinear PDE leads to a nonlinear system of algebraic equations.  This nonlinear system must be solved using a homemade Newton's method or SciPy's `root` function at each time step.  Alternatively, an *implicit-explicit* (IMEX) method can be used to produce a linear algebraic system that can be solved using NumPy's `linalg.solve` function (or SciPy's `root` function).
 
-A common feature of all implicit methods is that a linear system of algebraic equations must be solved at each time step.  The matrices associated with these linear systems are sparse.  SciPy's `sparse` module contains several functions for constructing sparse matrices and carrying out sparse linear algebra.  This can substantially reduce the memory footprint of your Python code and the time that is require to carry out linear algebra operations (e.g. compute matrix-vector products, solve linear systems).
+A common feature of all implicit methods is that a linear system of algebraic equations must be solved at each time step.  The matrices associated with these linear systems are sparse.  SciPy's `sparse` module contains several functions for constructing sparse matrices and carrying out sparse linear algebra.  This can substantially reduce the memory footprint of your Python code and the time that is required to carry out linear algebra operations (e.g. compute matrix-vector products, solve linear systems).
 
 
 ## Exercise
@@ -49,13 +49,22 @@ Solve this problem until $t = 2$ with the implicit Euler and the IMEX methods.  
 </li><li>
 ~~~
 
-Solve the dynamic Bratu problem with sparse matrices.  To do this, you will need to code up Newton's method and make use of the `scipy.sparse.spsolve` function.  Time your code to determine how much faster it is when sparse matrices are used.
+Solve the dynamic Bratu problem with sparse matrices.  To do this, you will need to code up Newton's method and make use of the `scipy.sparse.spsolve` function.  Time your code to determine how much faster it is when sparse matrices are used.  How does the speed-up depend on the number of grid points that are used?
 
 **Hint**: It may be helpful to first solve the nonlinear Poisson equation using sparse matrices.  Some notes on how to implement Newton's method for this problem can be found [here](/pdes/nonlinear_poisson.pdf).
 
 ~~~
+</li><li>
+~~~
+
+Adapt your code so that sparse matrices can be used with all of the numerical methods for PDEs we have seen so far.  The user should be able be specify whether sparse matrices are used or not.
+
+~~~
 </li></ol>
 ~~~
+
+
+
 
 ## Bonus problems
 
