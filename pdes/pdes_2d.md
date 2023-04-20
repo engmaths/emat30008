@@ -4,7 +4,7 @@
 
 ## Overview
 
-In the final week of the unit, we will use finite differences to solve PDEs in two dimensions.  Particular focus will be placed on solving Poisson's equation.  For 2D problems, the number of unknowns and hence the size of the linear systems quickly grow as the number of grid points is increased.  Hence, sparse matrices can lead to substantial reductions in the memory that needed to numerically solve the PDE.  The `memory_profiling` package enables the memory that is used by Python functions to be monitored line-by-line.
+In the final week of the unit, we will use finite differences to solve PDEs in two dimensions.  Particular focus will be placed on solving Poisson's equation.  For 2D problems, the number of unknowns and hence the size of the linear systems quickly grow as the number of grid points is increased.  Hence, sparse matrices can lead to substantial reductions in the memory that needed to numerically solve the PDE.  The `memory_profiler` package enables the memory that is used by Python functions to be monitored line-by-line.
 
 
 ## Downloadable code
