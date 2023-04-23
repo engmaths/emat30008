@@ -120,7 +120,7 @@ Reviewing your learning in this way is a key part of developing your skills.
 
 ### Brief summary of the software
 
-The summary of the software should explain the capabilities of your software (e.g., what methods are implemented &mdash; there is no need to explain how the methods work) and provide some examples, with results, of it in use. Code samples may be appropriate but they should be short and for the purpose of demonstration only.
+The summary of the software should explain the capabilities of your software. For example, explain what methods are implemented (**do not** explain how the methods work) and provide some examples, with results, of it in use. Code samples may be appropriate but they should be short and for the purpose of demonstration only.
 
 ### Description of the key software design decisions
 
