@@ -20,10 +20,9 @@ By the end of this week, you should have a suite of methods that can be used to 
 | Method | Type of PDE | Notes |
 | :----: | :----: | :----: |
 | Explicit Euler | Linear and nonlinear | Time-step restrictions |
-| Method of lines | Linear and nonlinear | Can be used with any time-stepping method, e.g. Euler, RK45, SciPy's `solve_ivp`; time-step restriction depends on method |
+| Method of lines | Linear and nonlinear | Can be used with any time-stepping method, e.g. explicit Euler, RK45, SciPy's `solve_ivp`; time-step restriction depends on method |
 | Implicit Euler | Linear and nonlinear | No time-step restrictions if the PDE is linear |
-| Crank-Nicolson | Linear | No time-step restrictions; second-order accurate in time |
-| IMEX | Nonlinear | Avoids solving a nonlinear system at each time step |
+| IMEX | Nonlinear | Avoids solving a nonlinear system at each time step.  Reduces to implicit Euler for linear equations |
 
 Ideally, the user of your PDE solver should be able to specify which of these methods will be used to solve the PDE problem.
 
@@ -36,7 +35,7 @@ If you haven't already done so, you should try implementing these methods using 
 <ol><li>
 ~~~
 
-(Essential) Consider again the dynamic Bratu problem
+Consider again the dynamic Bratu problem
 \begin{align}
 \pd{u}{t} = D \pdd{u}{x} + e^{\mu u},
 \end{align}
@@ -57,15 +56,17 @@ Solve the dynamic Bratu problem with sparse matrices.  To do this, you will need
 </li><li>
 ~~~
 
-Adapt your code so that sparse matrices can be used with all of the numerical methods for PDEs we have seen so far.  The user should be able be specify whether sparse matrices are used or not.
+Use memory profiling to explore the memory usage when solving the dynamic Bratu problem using dense and sparse matrices with
+implicit methods.
+
+~~~
+</li><li>
+~~~
+
+
+Adapt your code so that sparse matrices can be used with all of the numerical methods for PDEs we have seen so far.  The user should be able be specify whether sparse matrices are used or not.  
+
 
 ~~~
 </li></ol>
 ~~~
-
-
-
-
-## Bonus problems
-
-Solve some of the PDEs in the bonus problems from [Week 20](/pdes/explicit/) using implicit methods.

@@ -47,7 +47,8 @@ the parameters in the problem.
 Ideally, the user should be able to select how the algebraic system that arises
 from discretising the problem will be solved.  For example, the discrete
 problem could be solved using SciPy's `root` function, NumPy's `solve` function (if the problem is linear),
-or your own implementation of Newton's method.
+or your own implementation of Newton's method (see the [supplementary notes](/pdes/nonlinear_poisson.pdf) 
+above on how to implement this).
 
 ### Steps
 
@@ -58,7 +59,7 @@ you can see how to build your code up from simpler problems.  Test your code ext
 <ol><li>
 ~~~
 
-(Essential) Use finite differences to find a numerical solution to
+Use finite differences to find a numerical solution to
 $$
 \tdd{u}{x} = 0, \quad
 u(a) = \gamma_1, \quad u(b) = \gamma_2.
@@ -73,7 +74,7 @@ which you can use to test your code.
 </li><li>
 ~~~
 
-(Essential) Extend your code so that it can account for a source term in the ODE:
+Extend your code so that it can account for a source term in the ODE:
 $$
 D \tdd{u}{x} + q(x) = 0, \quad
 u(a) = \gamma_1, \quad u(b) = \gamma_2.
@@ -98,12 +99,6 @@ The Bratu problem appears in mathematical models of combustion and [thermal runa
 
 **Hint**: If $q$ depends nonlinearly on the solution $u$, then a good initial guess of the solution is usually required for the nonlinear solver (e.g. SciPy's `root` function or Newton's method) to converge.  For this problem, a good initial guess can be found by noting that when $\mu$ is small, the exponential can be approximated as $e^{\mu u} \approx 1$.  The solution in this case is given by (5), which can be used to form an initial guess.
 
-~~~
-</li><li>
-~~~
-Use numerical continuation to compute the solution to (6) when $D = 1.0$ and for $0 \leq \mu \leq 4$.  Plot the maximum of $u$ as a function of $\mu$.
-
-**Hint**: use pseudo-arclength continuation to see the full picture.
 
 ~~~
 </li><li>
@@ -115,7 +110,7 @@ Update your code so that it can account for Dirichlet, Neumann, or Robin boundar
 </li></ol>
 ~~~
 
-## Bonus problems
+<!-- ## Bonus problems
 
 Think about extending your solver to other types of ODEs.  For example:
 
@@ -155,4 +150,4 @@ a finite-difference formula for the fourth derivative, which can be derived usin
 
 ~~~
 </li></ul>
-~~~
+~~~ -->

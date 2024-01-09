@@ -25,4 +25,4 @@ Work on these exercises during the lab session, drop-in session,
 and at home.  If you can complete all of these exercises without
 major issues, then you should have a good foundation for the unit.
 If you are struggling, then please seek help at the drop-in sessions
-on Mondays.
+on Fridays.

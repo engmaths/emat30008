@@ -36,11 +36,11 @@ simultaneously achieving the software aims.
   * Runge-Kutta.
 * Implement ODE boundary value problem (BVP) solvers based on different
   numerical methods, namely
-  * single shooting[^1], and
+  * single shooting[^1]
   * finite differences.
 * Implement PDE integration methods such as
-  * Euler's method with finite differences, and
-  * Crank-Nicholson.
+  * Euler's method with finite differences
+  * The method of lines
 * Implement pseudo-arclength continuation, combining the methods above to solve a range of parameter dependent ODE/PDE problems.
 
 [^1]: Multiple shooting is a good extension that you might want to consider; it is relatively easy to implement (once single shooting is implemented) and is much more stable than single shooting.
@@ -59,6 +59,9 @@ simultaneously achieving the software aims.
   * use appropriate software development management techniques such as
       [Waterfall](https://en.wikipedia.org/wiki/Waterfall_model) or
       [Agile](https://en.wikipedia.org/wiki/Agile_software_development)[^3].
+* Use code profiling and benchmarking to:
+  * optimise code and understand its limitations
+  * inform the choice of numerical solver
 
 [^2]: There are many abstraction techniques in software engineering; see this [Wikipedia page](https://en.wikipedia.org/wiki/Abstraction_(computer_science)).
 [^3]: It isn't really possible to use Agile or similar techniques within this course because of the relative simplicity of the tasks. Also note this [commentary](https://zwischenzugs.com/2017/10/15/my-20-year-experience-of-software-development-methodologies/) on different management techniques &mdash; I suspect it's quite accurate!
@@ -73,8 +76,8 @@ Each week we will provide
 * an optional drop-in session to work on the exercises with teaching assistants available to help.
 
 Group exercises will include activities such as pair coding &mdash; come ready
-to participate. All material will be released on Monday before the Friday lab
-session.
+to participate. All material will be released one week in advance of the 
+appropriate Monday lab session.
 
 ### Week 13: Matt Hennessy
 
@@ -99,9 +102,9 @@ session.
 * The finite difference method
 * Application to linear and nonlinear ODE boundary value prolems
 * Explicit and implicit methods for diffusion equations
-* Method of manufactured solutions
-* Sparse linear algebra and code profiling
+* Sparse linear algebra
+* Code profiling and benchmarking
 
 ### Weeks 23--24: Matt and David
-
+* Coursework support (Week 23)
 * Advanced topics TBD

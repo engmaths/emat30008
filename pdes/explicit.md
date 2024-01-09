@@ -97,8 +97,8 @@ Use your code to solve the dynamic Bratu problem
 \end{align}
 with $u(0, t) = 0$,  $u(1,t) = 0$
 and initial condition $u(x,0) = 0$.
-Take $D = 1.0$.  Compute numerical solutions when $\mu = 2$ and $\mu = 4$.
-Interpret these results in the context of your solution to Exercise 4 from Week 19.
+Take $D = 1.0$.  Compute numerical solutions when $\mu = 2$ and compare
+to the steady-state solution that you computed in the Week 19 exercises.
 
 ~~~
 </li><li>
@@ -110,7 +110,7 @@ Update your code so that it can also account for Dirichlet, Neumann, and Robin b
 </li></ol>
 ~~~
 
-## Bonus problems
+<!-- ## Bonus problems
 
 ~~~
 <ul><li>
@@ -150,4 +150,4 @@ Try solving this problem with various methods (explicit Euler, RK, `solve_ivp`) 
 
 ~~~
 </li></ul>
-~~~
+~~~ -->

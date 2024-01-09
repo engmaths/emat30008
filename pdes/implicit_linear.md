@@ -6,22 +6,13 @@
 
 Last week we saw how the finite difference method could be used to convert the diffusion equation into a system of ODEs.  This ODE system could be solved with the explicit Euler or Runge-Kutta methods, but only if the time step $\Delta t$ was sufficiently small.  
 
-This week we will focus on implicit methods for the linear diffusion equation, namely the implicit Euler and Crank-Nicolson methods.  Both of these methods are *unconditionally stable*, meaning that they will work for any time step size $\Delta t$.  However, both of these methods require solving a linear system of equations at each time step, which comes at a high computational cost.  Hence, there is a tradeoff between being able to take fewer time steps to obtain a numerical solution and the higher computational cost per time step.
+This week we will focus on implicit methods for the *linear* diffusion equation, namely the implicit Euler method.  This method is *unconditionally stable*, meaning it will work for any time step size $\Delta t$.  However, this method requires solving a linear system of equations at each time step, which comes at a high computational cost.  Hence, there is a tradeoff between being able to take fewer time steps to obtain a numerical solution and the higher computational cost per time step.
 
 We will also introduce the concepts of code benchmarking and profiling, which are ways of analysing the performance of code.  Benchmarking and profiling can help with code optimisation and selecting the best method for a given problem.  The `timeit` and `cProfile` packages will be introduced as tools for benchmarking and profiling.
 
-
-
-## Supplementary material
-
-Use the links below to find additional notes on
-
-* [Derivation of Crank-Nicolson](/pdes/crank_nicolson.pdf)
-
-
 ## Exercise
 
-The goal of this week is to extend your PDE solver from [Week 20](/pdes/explicit) so that the implicit Euler and Crank-Nicolson methods can be used to solve *linear* diffusion equations of the form
+The goal of this week is to extend your PDE solver from [Week 20](/pdes/explicit) so that the implicit Euler method can be used to solve *linear* diffusion equations of the form
 $$
 \pd{u}{t} = D \pdd{u}{x} + q(x, t, \mu).
 $$
@@ -37,42 +28,36 @@ Benchmarking will be used to compare the performance of the various methods you 
 <ol><li>
 ~~~
 
-(Essential) Consider the linear diffusion equation
+Consider the linear diffusion equation
 $$
 \pd{u}{t} = D \pdd{u}{x}
 $$
 with boundary conditions $u(0,t) = 0$ and $u(1,t) = 0$ and initial condition
-$u(x,0) = \sin(\pi x)$.  Solve this problem with the implicit Euler and Crank-Nicolson methods, using $D = 0.1$, $N = 100$ (so 101 grid point), and $\Delta t = 0.1$.  How does the size of $\Delta t$ compare to the maximum size of $\Delta t$ that could be used for the explicit Euler method?
+$u(x,0) = \sin(\pi x)$.  Solve this problem with the implicit Euler method, using $D = 0.1$, $N = 100$ (so 101 grid point), and $\Delta t = 0.1$.  How does the size of $\Delta t$ compare to the maximum size of $\Delta t$ that could be used for the explicit Euler method?
 
 ~~~
 </li><li>
 ~~~
 
-(Essential) Using your numerical solutions from Step 1, compute $u(0.5, 2)$.  Compare your numerical values of $u(0.5,2)$ to the exact value of $\exp(-0.2\pi^2)$.  Which method leads to a more accurate approximation and why?
+Use benchmarking to determine the fastest method (e.g. explicit Euler, RK45, implicit Euler) for solving the problem in Step 1. To make a fair comparison, use the same number of grid points, $N+1$, and ensure that the numerical approximation to $u(0.5, 2)$ has an error that is no greater than $10^{-4}$.  The exact value of $u(0.5, 2)$ is $\exp(-0.2\pi^2)$.  The size of the time step, $\Delta t$, can differ between each method.
 
 ~~~
 </li><li>
 ~~~
 
-(Essential) Use benchmarking to determine the fastest method (e.g. explicit Euler, RK, implicit Euler, Crank-Nicolson) for solving the problem in Step 1. To make a fair comparison, use the same number of grid points, $N+1$, and ensure that the numerical approximation to $u(0.5, 2)$ has an error that is no greater than $10^{-4}$.  The size of the time step, $\Delta t$, can differ between each method.
+Profile your PDE solver to identify where the most time is being spent when using the numerical methods you have implemented so far.  Use this information to either optimise your code or suggest where your code could be optimised.  *Make sure to take note of your findings here as you can discuss them in your report.*
 
 ~~~
 </li><li>
 ~~~
 
-(Essential) Profile your PDE solver to identify where the most time is being spent when using the numerical methods you have implemented so far.  Use this information to either optimise your code or suggest where your code could be optimised.  *Make sure to take note of your findings here as you can discuss them in your report.*
-
-~~~
-</li><li>
-~~~
-
-Generalise your implementations of implicit Euler and Crank-Nicolson so they can solve linear diffusion equations with a source term, as in Eqn (1), with Dirichlet, Neumann, and Robin boundary conditions.
+Generalise your implementation of implicit Euler method to solve linear diffusion equations with a source term, as in Eqn (1), with Dirichlet, Neumann, and Robin boundary conditions.
 
 ~~~
 </li></ol>
 ~~~
 
-## Bonus problems
+<!-- ## Bonus problems
 
 ~~~
 <ul><li>
@@ -112,4 +97,4 @@ $$
 As an initial condition, set $u(x,0) = 0$.  Compare your solution to that obtained from the [Week 19](/pdes/finite_diff/) exercises.
 ~~~
 </li></ul>
-~~~
+~~~ -->

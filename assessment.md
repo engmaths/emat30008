@@ -3,7 +3,7 @@
 # Assessment
 
 !!! note
-    The deadline for submission is 13:00 on Thursday, 27 April 2023 (week 23).
+    The deadline for submission is 13:00 on Thursday, 25 April 2023 (week 23).
 
 * [Overview](#overview)
 * [Software](#software)
