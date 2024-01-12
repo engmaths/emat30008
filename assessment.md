@@ -19,18 +19,14 @@ discrete piece of work, the coursework will be the *cumulation of material
 covered each week of the course*. Each week will build on the previous and form
 part of the assessment.
 
-The University's [generic marking
-criteria](http://www.bristol.ac.uk/academic-quality/assessment/regulations-and-code-of-practice-for-taught-programmes/marking-criteria/)
-will be used in the assessment of the coursework.
-
 The final submission of the coursework should consist of
 
 1. a clean Git repository, i.e., `git status` gives no warnings of uncommitted
    files or changes, containing the software developed and the development
    history, and
-2. a short report written as a Jupyter notebook (maximum 15 pages, aim for 8&ndash;10 pages) describing the
-   software produced and the thought processes that you went through to create
-   it[^1].
+2. a short report written as a Jupyter notebook that demonstrates the 
+    capabilities of your software and descibes the thought processes
+    that went into it.  
 
 The two parts of the coursework, code and report, will be weighted equally
 (i.e., 50:50). Details about each component are below.
@@ -39,36 +35,47 @@ There is no need to try hide mistakes you made in the software development
 process &mdash; this is a learning process. If you haven't made any mistakes,
 you probably haven't learnt anything.
 
-Ensure
-that we have read access to your Git repository[^2].
+Ensure that we have read access to your Git repository by adding us as collaborators[^1].
+You will need our GitHub usernames to do this[^1]
 
-[^1]: Concise is good; 8&ndash;10 pages of good content is far better than 15 pages of waffle.
-[^2]: David Barton (`@dawbarton` on GitHub); Matthew Hennessy (`@hennessymatt` on GitHub)
+[^1]: David Barton (`@dawbarton` on GitHub); Matthew Hennessy (`@hennessymatt` on GitHub)
 
 ## Software
 
-The aim of the coursework is to integrate the work you do from each week into a single piece of software. The software should be a general numerical continuation code that can track, under variations of a parameter in the system,  
+The aim of the coursework is to integrate the work you do from each week into a single piece of software.
+The software should be in the form of Python modules that can be imported into
+Python scripts or Jupyter notebooks.
 
-* limit cycle oscillations of arbitrary ordinary differential equations (of any number of dimensions), and
-* steady-states of second-order diffusive PDEs.
+The software you develop will provide a suite of tools for solving mathematical problems involving
+differential equations.  Specifically, the software should be able to:
 
-You should take care to define appropriate interfaces between each of the components so that the resulting code is modular and follows the DRY (Don't Repeat Yourself) principle.
+* Compute steady-state solutions to ordinary and partial differential equations
+* Compute time-dependent solutions to ordinary and partial differential equations
+* Compute limit cycles of ordinary differential equations
+* Track how steady-state solutions and limit cycles evolve as a parameter in the system varies using numerical continuation
 
-The code should take the form of a library (like, for example, the `solve_ivp` function in SciPy) and provide one or more functions that take as input
+Your code should be able to solve arbitrary systems of ordinary differential equations 
+(of any number of dimensions).  Moreover, it should be able to solve
+second-order diffusive partial differential equations 
+with a variety of possible boundary conditions (Dirichlet, Neumann, Robin) 
+and source terms.
+
+The code should consist of one or many Python modules.  Each module should contain
+Python functions or classes that carry out the above computations 
+and that take as input:
 
 * the differential equation (either an ODE or PDE) in a suitable form,
-* the parameter values, and
-* a starting guess for the initial variable values (and period of oscillation if appropriate).
+* the parameter values
+* a starting guess for the initial variable values (e.g. the initial condition)
+* any other options (e.g. the numerical method to use, tolerances)
 
-The function should return the branch of solutions calculated for a range of parameter values.
-
-Moreover, you should provide time simulation codes for both ODEs and PDEs to enable the (stable) solutions to be verified.
+You should take care to define appropriate interfaces between each of the components so that the resulting code is modular and follows the DRY (Don't Repeat Yourself) principle.
 
 Your code should be fully tested against a range of inputs and (known) outputs. Inputs that do not have a solution should be handled gracefully.
 
 Your code should be documented appropriately.
 
-Examples of running your code should be provided for both ODEs and PDEs. There should be no user input (i.e., typing into the terminal) required when running the examples.
+<!-- Examples of running your code should be provided for both ODEs and PDEs. There should be no user input (i.e., typing into the terminal) required when running the examples. -->
 
 Even if you are not able to complete the entire coursework, you should aim, insofar as possible, to demonstrate an understanding of the software engineering principles and mathematical concepts taught in the course.
 
@@ -106,27 +113,64 @@ Read [Git Best Practices](https://sethrobertson.github.io/GitBestPractices/).
 
 ## Report
 
-The report should comprise
+The report should be contained in a single Jupyter notebook.  The
+report should have three parts:
 
-* a *brief* summary of your software (30% of the marks),
+* a demo of your software (40% of the marks),
 * a description of the key software design decisions made (40% of the marks), and
-* a *reflective learning log* (30% of the marks).
+* a *reflective learning log* (20% of the marks).
 
-Penalties may be incurred if the page limit (see the [Overview](#overview)) is exceeded.
+Penalties may be incurred if the word counts are exceeded (see below)
 
-The reflective learning log is a key part of the report. The course is focusing
-on the development of software engineering skills rather than knowledge.
-Reviewing your learning in this way is a key part of developing your skills.
+### Demo of your software
 
-### Brief summary of the software
+You will demonstrate the capabilities of your software by using it to
+solve a set of mathematical problems involving ordinary and
+partial differential equations.  Everyone will solve the
+same set of problems.  The problems will be released on Friday of
+Week 20 (15 March).  The problems will be similar to the weekly
+exercises that can be found on the unit website.
 
-The summary of the software should explain the capabilities of your software. For example, explain what methods are implemented (**do not** explain how the methods work) and provide some examples, with results, of it in use. Code samples may be appropriate but they should be short and for the purpose of demonstration only.
+In the demo section of your report, you should use code cells 
+to import your Python modules, define and run any functions that are 
+needed to solve the problems, create any plots, and display any 
+output.  Markdown cells can be used to add written explanations.
+
+You should use high-level Python functions to carry out the 
+computations and keep the code in the Jupyter notebook concise.
+You should not write low-level code in the report that
+implements the steps of the numerical methods; this low-level
+code should be contained in Python modules that are imported.
+Adding code for plotting and printing output is fine.
+
+
+For example, suppose one of the problems to solve is the 
+logistic ODE given by $\dot{u} = u(1 - u)$ over the
+range $0 \leq t \leq 10$ with
+initial condition $u(0) = 0.1$ using the Euler method.
+A good code demonstration for this problem would look like:
+```python
+
+import ode_solvers as ode
+
+# Define a Python function for the logistic ODE
+def logistic(t, u):
+  return u * (1 - u)
+
+# Run the ODE solver using Euler's method
+t, u = ode.solve(logistic, ic = [0.1], t_range = [0, 10], method = "Euler")
+
+```
 
 ### Description of the key software design decisions
 
 The key design decisions should be described; explain your thinking behind the overall structure and interfaces of your code. If your code structure is intricate, a block diagram might be appropriate. Why were the solvers implemented as they are? What alternative designs might have been appropriate and why were they not pursued?
 
 ### Reflective learning log
+
+The reflective learning log is a key part of the report. The course is focusing
+on the development of software engineering skills rather than knowledge.
+Reviewing your learning in this way is a key part of developing your skills.
 
 From the [Open University](https://help.open.ac.uk/be-aware-of-your-habits)
 reflective thinking can be described as
