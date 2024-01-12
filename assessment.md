@@ -49,22 +49,21 @@ Python scripts or Jupyter notebooks.
 The software you develop will provide a suite of tools for solving mathematical problems involving
 differential equations.  Specifically, the software should be able to:
 
-* Compute steady-state solutions to ordinary and partial differential equations
+* Compute steady-state (time-independent) solutions to ordinary and partial differential equations
 * Compute time-dependent solutions to ordinary and partial differential equations
 * Compute limit cycles of ordinary differential equations
 * Track how steady-state solutions and limit cycles evolve as a parameter in the system varies using numerical continuation
 
-Your code should be able to solve arbitrary systems of ordinary differential equations 
-(of any number of dimensions).  Moreover, it should be able to solve
+Your code should work with arbitrary systems of ordinary differential equations 
+(of any number of dimensions).  Moreover, it should work with
 second-order diffusive partial differential equations 
-with a variety of possible boundary conditions (Dirichlet, Neumann, Robin) 
-and source terms.
+with a variety of boundary conditions and source terms.
 
 The code should consist of one or many Python modules.  Each module should contain
 Python functions or classes that carry out the above computations 
 and that take as input:
 
-* the differential equation (either an ODE or PDE) in a suitable form,
+* the differential equation (either an ODE or PDE) in a suitable form
 * the parameter values
 * a starting guess for the initial variable values (e.g. the initial condition)
 * any other options (e.g. the numerical method to use, tolerances)
@@ -113,8 +112,8 @@ Read [Git Best Practices](https://sethrobertson.github.io/GitBestPractices/).
 
 ## Report
 
-The report should be contained in a single Jupyter notebook.  The
-report should have three parts:
+The report must be contained in a single Jupyter notebook.  The
+report has three parts:
 
 * a demo of your software (40% of the marks),
 * a description of the key software design decisions made (40% of the marks), and
@@ -124,17 +123,24 @@ Penalties may be incurred if the word counts are exceeded (see below)
 
 ### Demo of your software
 
+Word limit: none
+
 You will demonstrate the capabilities of your software by using it to
 solve a set of mathematical problems involving ordinary and
 partial differential equations.  Everyone will solve the
 same set of problems.  The problems will be released on Friday of
 Week 20 (15 March).  The problems will be similar to the weekly
-exercises that can be found on the unit website.
+exercises that can be found on the unit website.  They will
+also test your ability to select appropriate numerical methods.
 
 In the demo section of your report, you should use code cells 
 to import your Python modules, define and run any functions that are 
 needed to solve the problems, create any plots, and display any 
-output.  Markdown cells can be used to add written explanations.
+output.  The code that is contained in the code cells of the
+report must run without error.  We will re-execute the code
+in the cells use the output for assessment.
+
+Markdown cells can be used to add written explanations.
 
 You should use high-level Python functions to carry out the 
 computations and keep the code in the Jupyter notebook concise.
@@ -161,12 +167,29 @@ def logistic(t, u):
 t, u = ode.solve(logistic, ic = [0.1], t_range = [0, 10], method = "Euler")
 
 ```
+Here, `ode_solvers` is a module that has been created with all of the Python
+code for solving ODEs, and `solve` is a high-level function
+to solve arbritrary ODEs with various numerical methods.
 
 ### Description of the key software design decisions
 
-The key design decisions should be described; explain your thinking behind the overall structure and interfaces of your code. If your code structure is intricate, a block diagram might be appropriate. Why were the solvers implemented as they are? What alternative designs might have been appropriate and why were they not pursued?
+Word limit: 2500 words
+
+The key design decisions should be described and justified.
+For example, you could 
+explain your thinking behind the overall structure and interfaces of your code,
+the data structures and variable types you used, your use of functional
+or object-oriented programming, your choice of 
+solvers (e.g. SciPy vs NumPy), any code optimisations you made.
+
+This part of the report should only involve text (no code, no figures, etc).
+It should be contained in a *single* markdown cell.  A word count must be
+provided.
 
 ### Reflective learning log
+
+Word limit: 1000 words
+
 
 The reflective learning log is a key part of the report. The course is focusing
 on the development of software engineering skills rather than knowledge.
@@ -192,7 +215,6 @@ Key questions you should try to answer in your learning log are as follows.
 
 You will probably find it helpful to make notes on the answers to these questions each week.
 
-
 ## Marking
 
 Your software will be marked both on the quality of the code (software engineering) and achievement of the scientific aims with roughly equal weighting.
@@ -209,7 +231,9 @@ A **good first-class** answer would demonstrate
   * pseudo-arclength continuation implemented for arbitrary functions,
   * discretisations of limit cycle oscillations of ODEs using numerical shooting,
   * discretisations of diffusive PDEs using finite differences,
-  * time simulation codes to verify the long-time behaviour of ODEs and PDEs (e.g., Runge-Kutta and Crank-Nicholson).
+  * time simulation codes to verify the long-time behaviour of ODEs and PDEs (e.g., Euler and Runge-Kutta).
+* code design decisions are strongly justified and analysed in depth
+* reflective log that is critical and insightful; balanced but never negative
 
 A **bare pass** answer would demonstrate
 
@@ -220,6 +244,7 @@ A **bare pass** answer would demonstrate
 * some scientific achievements including
   * discretisations of limit cycle oscillations of ODEs using numerical shooting,
   * discretisations of diffusive PDEs using finite differences.
+* descriptive discussions in the report that are neither critical nor reflective or which lack detail
 
 ## Submission
 
