@@ -130,8 +130,12 @@ solve a set of mathematical problems involving ordinary and
 partial differential equations.  Everyone will solve the
 same set of problems.  The problems will be released on Friday of
 Week 20 (15 March).  The problems will be similar to the weekly
-exercises that can be found on the unit website.  They will
-also test your ability to select appropriate numerical methods.
+exercises that can be found on the unit website.
+
+The demo section will be used to assess your implementations
+of the numerical methods covered in the unit as well as your
+your ability to select appropriate numerical methods for
+various problems.
 
 In the demo section of your report, you should use code cells 
 to import your Python modules, define and run any functions that are 
@@ -140,10 +144,12 @@ output.  The code that is contained in the code cells of the
 report must run without error.  We will re-execute the code
 in the cells use the output for assessment.
 
-Markdown cells can be used to add written explanations.
+Markdown cells can be used to add section headings and
+add written explanations when necessary.
+
 
 You should use high-level Python functions to carry out the 
-computations and keep the code in the Jupyter notebook concise.
+computations and keep the code concise.
 You should not write low-level code in the report that
 implements the steps of the numerical methods; this low-level
 code should be contained in Python modules that are imported.
@@ -173,22 +179,24 @@ to solve arbritrary ODEs with various numerical methods.
 
 ### Description of the key software design decisions
 
-Word limit: 2500 words
+Word limit: 1250 words[^4]
 
 The key design decisions should be described and justified.
 For example, you could 
-explain your thinking behind the overall structure and interfaces of your code,
-the data structures and variable types you used, your use of functional
-or object-oriented programming, your choice of 
-solvers (e.g. SciPy vs NumPy), any code optimisations you made.
+explain your thinking behind the overall structure and interfaces of your code
+(e.g. how you made the various parts of your code work together),
+the data structures and variable types you used, your choice of 
+solvers (e.g. SciPy vs NumPy), any code optimisations you made, etc.
 
 This part of the report should only involve text (no code, no figures, etc).
 It should be contained in a *single* markdown cell.  A word count must be
 provided.
 
+[^4]: Do not feel as if you must use all 1250 words.  A concise report is better than a report with waffle.
+
 ### Reflective learning log
 
-Word limit: 1000 words
+Word limit: 750 words
 
 
 The reflective learning log is a key part of the report. The course is focusing
@@ -206,12 +214,10 @@ reflective thinking can be described as
 
 Key questions you should try to answer in your learning log are as follows.
 
-* What did I learn about the mathematical algorithms? I.e., solving boundary value problems, numerical ill-conditioning, etc.
-* What did I learn about software engineering? How have I progressed in my abilities?
-* What are the short-term implications of what I've learnt? (When will it be useful?)
-* What are the long-term implications of what I've learnt? (When will it be useful?)
+* What did I learn about the mathematical algorithms?
+* What did I learn about software engineering? 
 * What would I have done differently if I started the unit over again?
-* What will I do differently in the future?
+* What will I do differently in the future as a result of this unit?
 
 You will probably find it helpful to make notes on the answers to these questions each week.
 
@@ -232,8 +238,8 @@ A **good first-class** answer would demonstrate
   * discretisations of limit cycle oscillations of ODEs using numerical shooting,
   * discretisations of diffusive PDEs using finite differences,
   * time simulation codes to verify the long-time behaviour of ODEs and PDEs (e.g., Euler and Runge-Kutta).
-* code design decisions are strongly justified and analysed in depth
-* reflective log that is critical and insightful; balanced but never negative
+* excellent justification for code design, with a critical and comprehensive analysis of the decisions made
+* critical and insightful discussions in the learning log, with in-depth and thoughtful reflections on the unit
 
 A **bare pass** answer would demonstrate
 
@@ -244,13 +250,16 @@ A **bare pass** answer would demonstrate
 * some scientific achievements including
   * discretisations of limit cycle oscillations of ODEs using numerical shooting,
   * discretisations of diffusive PDEs using finite differences.
-* descriptive discussions in the report that are neither critical nor reflective or which lack detail
+* descriptive discussions in the report that are neither critical nor reflective, and which may lack detail
 
 ## Submission
 
 Please upload a PDF of your report (e.g. by printing as a PDF from your Jupyter Notebook)
 to Blackboard by the submission deadline.  Be sure to include the Jupyter Notebook
-itself (i.e. the .ipynb file) in your GitHub repository.
+itself (i.e. the .ipynb file) in your GitHub repository.  
+
+*Only the Jupyter Notebook version
+of the report will be assessed*.  So don't worry if the PDF is poorly formatted.
 
 Your GitHub repository will be pulled for the final time immediately after
 the submission deadline.
