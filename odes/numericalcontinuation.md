@@ -6,8 +6,7 @@ Remember: *Commit Often, Perfect Later, Publish Once* and *make (lots of) notes
 in your code about the decisions you are making!*
 
 You should be committing your code to the Git repository after completing
-each question as *a minimum*. You should push your code to Bitbucket at
-the end of each lab and/or week[^1].
+each question as *a minimum*. You should push your code to the cloud server (GitHub) at the end of each lab and/or week[^1].
 
 This is an exercise in *defining appropriate interfaces and abstractions*. Here
 you will need to join together the different pieces of code that you have
