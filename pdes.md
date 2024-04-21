@@ -8,3 +8,4 @@ Breakdown by week:
 * [Week 20 --- explicit methods for diffusion equations](explicit/)
 * [Week 21 --- implicit methods part 1; code profiling](implicit_linear/)
 * [Week 22 --- implicit methods part 2; sparse linear algebra](implicit_nonlinear/)
+* [Week 24 --- PDEs in 2D (not assessed)](pdes_2d/)
