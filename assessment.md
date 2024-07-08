@@ -3,7 +3,7 @@
 # Assessment
 
 !!! note
-    The deadline for submission is 13:00 on Thursday, 25 April 2023 (week 23).
+    The deadline for submission is 13:00 on Thursday, 25 April 2024 (week 23).
 
 * [Overview](#overview)
 * [Software](#software)
@@ -128,9 +128,15 @@ Word limit: none
 You will demonstrate the capabilities of your software by using it to
 solve a set of mathematical problems involving ordinary and
 partial differential equations.  Everyone will solve the
-same set of problems.  The problems will be released on Friday of
+same set of problems. 
+The problems for the demos can be found under the Assessment
+section of Blackboard.
+
+<!---
+The problems will be released on Friday of
 Week 20 (15 March).  The problems will be similar to the weekly
 exercises that can be found on the unit website.
+-->
 
 The demo section will be used to assess your implementations
 of the numerical methods covered in the unit as well as your
